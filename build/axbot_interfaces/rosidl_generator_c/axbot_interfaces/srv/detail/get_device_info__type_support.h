@@ -1,0 +1,100 @@
+// generated from rosidl_generator_c/resource/idl__type_support.h.em
+// with input from axbot_interfaces:srv/GetDeviceInfo.idl
+// generated code does not contain a copyright notice
+
+// IWYU pragma: private, include "axbot_interfaces/srv/get_device_info.h"
+
+
+#ifndef AXBOT_INTERFACES__SRV__DETAIL__GET_DEVICE_INFO__TYPE_SUPPORT_H_
+#define AXBOT_INTERFACES__SRV__DETAIL__GET_DEVICE_INFO__TYPE_SUPPORT_H_
+
+#include "rosidl_typesupport_interface/macros.h"
+
+#include "axbot_interfaces/msg/rosidl_generator_c__visibility_control.h"
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+#include "rosidl_runtime_c/message_type_support_struct.h"
+
+// Forward declare the get type support functions for this type.
+ROSIDL_GENERATOR_C_PUBLIC_axbot_interfaces
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+  rosidl_typesupport_c,
+  axbot_interfaces,
+  srv,
+  GetDeviceInfo_Request
+)(void);
+
+// already included above
+// #include "rosidl_runtime_c/message_type_support_struct.h"
+
+// Forward declare the get type support functions for this type.
+ROSIDL_GENERATOR_C_PUBLIC_axbot_interfaces
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+  rosidl_typesupport_c,
+  axbot_interfaces,
+  srv,
+  GetDeviceInfo_Response
+)(void);
+
+// already included above
+// #include "rosidl_runtime_c/message_type_support_struct.h"
+
+// Forward declare the get type support functions for this type.
+ROSIDL_GENERATOR_C_PUBLIC_axbot_interfaces
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+  rosidl_typesupport_c,
+  axbot_interfaces,
+  srv,
+  GetDeviceInfo_Event
+)(void);
+
+#include "rosidl_runtime_c/service_type_support_struct.h"
+
+// Forward declare the get type support functions for this type.
+ROSIDL_GENERATOR_C_PUBLIC_axbot_interfaces
+const rosidl_service_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(
+  rosidl_typesupport_c,
+  axbot_interfaces,
+  srv,
+  GetDeviceInfo
+)(void);
+
+// Forward declare the function to create a service event message for this type.
+ROSIDL_GENERATOR_C_PUBLIC_axbot_interfaces
+void *
+ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_CREATE_EVENT_MESSAGE_SYMBOL_NAME(
+  rosidl_typesupport_c,
+  axbot_interfaces,
+  srv,
+  GetDeviceInfo
+)(
+  const rosidl_service_introspection_info_t * info,
+  rcutils_allocator_t * allocator,
+  const void * request_message,
+  const void * response_message);
+
+// Forward declare the function to destroy a service event message for this type.
+ROSIDL_GENERATOR_C_PUBLIC_axbot_interfaces
+bool
+ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_DESTROY_EVENT_MESSAGE_SYMBOL_NAME(
+  rosidl_typesupport_c,
+  axbot_interfaces,
+  srv,
+  GetDeviceInfo
+)(
+  void * event_msg,
+  rcutils_allocator_t * allocator);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif  // AXBOT_INTERFACES__SRV__DETAIL__GET_DEVICE_INFO__TYPE_SUPPORT_H_

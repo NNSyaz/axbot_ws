@@ -1,0 +1,52 @@
+[5.224s] Invoking command in '/media/roboserver/DATA/axbot_ws/src/axbot_examples': CMAKE_PREFIX_PATH=/media/roboserver/DATA/axbot_ws/install/axbot_interfaces:/media/roboserver/DATA/axbot_ws/install/axbot_navigation:/media/roboserver/DATA/axbot_ws/install/axbot_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/media/roboserver/DATA/axbot_ws/build/axbot_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/roboserver/DATA/axbot_ws/install/axbot_examples/lib/python3.12/site-packages:/media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages:/media/roboserver/DATA/axbot_ws/install/axbot_examples/lib/python3.12/site-packages:/media/roboserver/DATA/axbot_ws/install/axbot_driver/lib/python3.12/site-packages:/media/roboserver/DATA/autox_ws/build/fielder_teleop:/media/roboserver/DATA/autox_ws/install/fielder_teleop/lib/python3.12/site-packages:/media/roboserver/DATA/autox_ws/build/fielder_odometry:/media/roboserver/DATA/autox_ws/install/fielder_odometry/lib/python3.12/site-packages:/media/roboserver/DATA/autox_ws/build/fielder_navigation:/media/roboserver/DATA/autox_ws/install/fielder_navigation/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/axbot_examples build --build-base /media/roboserver/DATA/axbot_ws/build/axbot_examples/build install --record /media/roboserver/DATA/axbot_ws/build/axbot_examples/install.log --single-version-externally-managed install_data
+[5.586s] running egg_info
+[5.586s] creating ../../build/axbot_examples/axbot_examples.egg-info
+[5.610s] writing ../../build/axbot_examples/axbot_examples.egg-info/PKG-INFO
+[5.611s] writing dependency_links to ../../build/axbot_examples/axbot_examples.egg-info/dependency_links.txt
+[5.611s] writing entry points to ../../build/axbot_examples/axbot_examples.egg-info/entry_points.txt
+[5.611s] writing requirements to ../../build/axbot_examples/axbot_examples.egg-info/requires.txt
+[5.611s] writing top-level names to ../../build/axbot_examples/axbot_examples.egg-info/top_level.txt
+[5.611s] writing manifest file '../../build/axbot_examples/axbot_examples.egg-info/SOURCES.txt'
+[5.662s] reading manifest file '../../build/axbot_examples/axbot_examples.egg-info/SOURCES.txt'
+[5.663s] writing manifest file '../../build/axbot_examples/axbot_examples.egg-info/SOURCES.txt'
+[5.663s] running build
+[5.663s] running build_py
+[5.664s] creating /media/roboserver/DATA/axbot_ws/build/axbot_examples/build
+[5.664s] creating /media/roboserver/DATA/axbot_ws/build/axbot_examples/build/lib
+[5.664s] creating /media/roboserver/DATA/axbot_ws/build/axbot_examples/build/lib/axbot_examples
+[5.664s] copying axbot_examples/bag_recorder.py -> /media/roboserver/DATA/axbot_ws/build/axbot_examples/build/lib/axbot_examples
+[5.668s] copying axbot_examples/device_info_reader.py -> /media/roboserver/DATA/axbot_ws/build/axbot_examples/build/lib/axbot_examples
+[5.676s] copying axbot_examples/pose_logger.py -> /media/roboserver/DATA/axbot_ws/build/axbot_examples/build/lib/axbot_examples
+[5.677s] copying axbot_examples/square_mover.py -> /media/roboserver/DATA/axbot_ws/build/axbot_examples/build/lib/axbot_examples
+[5.677s] copying axbot_examples/teleop_keyboard.py -> /media/roboserver/DATA/axbot_ws/build/axbot_examples/build/lib/axbot_examples
+[5.678s] copying axbot_examples/__init__.py -> /media/roboserver/DATA/axbot_ws/build/axbot_examples/build/lib/axbot_examples
+[5.678s] running install
+[5.684s] running install_lib
+[5.709s] creating /media/roboserver/DATA/axbot_ws/install/axbot_examples/lib/python3.12/site-packages/axbot_examples
+[5.710s] copying /media/roboserver/DATA/axbot_ws/build/axbot_examples/build/lib/axbot_examples/bag_recorder.py -> /media/roboserver/DATA/axbot_ws/install/axbot_examples/lib/python3.12/site-packages/axbot_examples
+[5.710s] copying /media/roboserver/DATA/axbot_ws/build/axbot_examples/build/lib/axbot_examples/device_info_reader.py -> /media/roboserver/DATA/axbot_ws/install/axbot_examples/lib/python3.12/site-packages/axbot_examples
+[5.710s] copying /media/roboserver/DATA/axbot_ws/build/axbot_examples/build/lib/axbot_examples/pose_logger.py -> /media/roboserver/DATA/axbot_ws/install/axbot_examples/lib/python3.12/site-packages/axbot_examples
+[5.710s] copying /media/roboserver/DATA/axbot_ws/build/axbot_examples/build/lib/axbot_examples/square_mover.py -> /media/roboserver/DATA/axbot_ws/install/axbot_examples/lib/python3.12/site-packages/axbot_examples
+[5.710s] copying /media/roboserver/DATA/axbot_ws/build/axbot_examples/build/lib/axbot_examples/teleop_keyboard.py -> /media/roboserver/DATA/axbot_ws/install/axbot_examples/lib/python3.12/site-packages/axbot_examples
+[5.710s] copying /media/roboserver/DATA/axbot_ws/build/axbot_examples/build/lib/axbot_examples/__init__.py -> /media/roboserver/DATA/axbot_ws/install/axbot_examples/lib/python3.12/site-packages/axbot_examples
+[5.711s] byte-compiling /media/roboserver/DATA/axbot_ws/install/axbot_examples/lib/python3.12/site-packages/axbot_examples/bag_recorder.py to bag_recorder.cpython-312.pyc
+[5.711s] byte-compiling /media/roboserver/DATA/axbot_ws/install/axbot_examples/lib/python3.12/site-packages/axbot_examples/device_info_reader.py to device_info_reader.cpython-312.pyc
+[5.712s] byte-compiling /media/roboserver/DATA/axbot_ws/install/axbot_examples/lib/python3.12/site-packages/axbot_examples/pose_logger.py to pose_logger.cpython-312.pyc
+[5.712s] byte-compiling /media/roboserver/DATA/axbot_ws/install/axbot_examples/lib/python3.12/site-packages/axbot_examples/square_mover.py to square_mover.cpython-312.pyc
+[5.714s] byte-compiling /media/roboserver/DATA/axbot_ws/install/axbot_examples/lib/python3.12/site-packages/axbot_examples/teleop_keyboard.py to teleop_keyboard.cpython-312.pyc
+[5.715s] byte-compiling /media/roboserver/DATA/axbot_ws/install/axbot_examples/lib/python3.12/site-packages/axbot_examples/__init__.py to __init__.cpython-312.pyc
+[5.715s] running install_data
+[5.715s] creating /media/roboserver/DATA/axbot_ws/install/axbot_examples/share/ament_index
+[5.715s] creating /media/roboserver/DATA/axbot_ws/install/axbot_examples/share/ament_index/resource_index
+[5.715s] creating /media/roboserver/DATA/axbot_ws/install/axbot_examples/share/ament_index/resource_index/packages
+[5.715s] copying resource/axbot_examples -> /media/roboserver/DATA/axbot_ws/install/axbot_examples/share/ament_index/resource_index/packages
+[5.715s] copying package.xml -> /media/roboserver/DATA/axbot_ws/install/axbot_examples/share/axbot_examples
+[5.715s] running install_egg_info
+[5.740s] Copying ../../build/axbot_examples/axbot_examples.egg-info to /media/roboserver/DATA/axbot_ws/install/axbot_examples/lib/python3.12/site-packages/axbot_examples-1.0.0-py3.12.egg-info
+[5.741s] running install_scripts
+[5.903s] Installing device_info_reader script to /media/roboserver/DATA/axbot_ws/install/axbot_examples/lib/axbot_examples
+[5.903s] Installing pose_logger script to /media/roboserver/DATA/axbot_ws/install/axbot_examples/lib/axbot_examples
+[5.903s] Installing square_mover script to /media/roboserver/DATA/axbot_ws/install/axbot_examples/lib/axbot_examples
+[5.903s] Installing teleop_keyboard script to /media/roboserver/DATA/axbot_ws/install/axbot_examples/lib/axbot_examples
+[5.903s] writing list of installed files to '/media/roboserver/DATA/axbot_ws/build/axbot_examples/install.log'
+[5.931s] Invoked command in '/media/roboserver/DATA/axbot_ws/src/axbot_examples' returned '0': CMAKE_PREFIX_PATH=/media/roboserver/DATA/axbot_ws/install/axbot_interfaces:/media/roboserver/DATA/axbot_ws/install/axbot_navigation:/media/roboserver/DATA/axbot_ws/install/axbot_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/media/roboserver/DATA/axbot_ws/build/axbot_examples/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/roboserver/DATA/axbot_ws/install/axbot_examples/lib/python3.12/site-packages:/media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages:/media/roboserver/DATA/axbot_ws/install/axbot_examples/lib/python3.12/site-packages:/media/roboserver/DATA/axbot_ws/install/axbot_driver/lib/python3.12/site-packages:/media/roboserver/DATA/autox_ws/build/fielder_teleop:/media/roboserver/DATA/autox_ws/install/fielder_teleop/lib/python3.12/site-packages:/media/roboserver/DATA/autox_ws/build/fielder_odometry:/media/roboserver/DATA/autox_ws/install/fielder_odometry/lib/python3.12/site-packages:/media/roboserver/DATA/autox_ws/build/fielder_navigation:/media/roboserver/DATA/autox_ws/install/fielder_navigation/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/axbot_examples build --build-base /media/roboserver/DATA/axbot_ws/build/axbot_examples/build install --record /media/roboserver/DATA/axbot_ws/build/axbot_examples/install.log --single-version-externally-managed install_data

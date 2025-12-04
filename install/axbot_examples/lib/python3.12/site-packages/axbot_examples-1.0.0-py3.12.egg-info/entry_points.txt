@@ -1,0 +1,5 @@
+[console_scripts]
+device_info_reader = axbot_examples.device_info_reader:main
+pose_logger = axbot_examples.pose_logger:main
+square_mover = axbot_examples.square_mover:main
+teleop_keyboard = axbot_examples.teleop_keyboard:main

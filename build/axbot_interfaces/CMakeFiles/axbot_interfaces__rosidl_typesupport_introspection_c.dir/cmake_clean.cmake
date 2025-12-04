@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/axbot_interfaces/msg/detail/device_info__type_support.c.o"
+  "CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/axbot_interfaces/msg/detail/device_info__type_support.c.o.d"
+  "CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/axbot_interfaces/msg/detail/planning_state__type_support.c.o"
+  "CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/axbot_interfaces/msg/detail/planning_state__type_support.c.o.d"
+  "CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/axbot_interfaces/msg/detail/robot_pose__type_support.c.o"
+  "CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/axbot_interfaces/msg/detail/robot_pose__type_support.c.o.d"
+  "CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/axbot_interfaces/msg/detail/slam_state__type_support.c.o"
+  "CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/axbot_interfaces/msg/detail/slam_state__type_support.c.o.d"
+  "CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/axbot_interfaces/msg/detail/wheel_state__type_support.c.o"
+  "CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/axbot_interfaces/msg/detail/wheel_state__type_support.c.o.d"
+  "CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/axbot_interfaces/srv/detail/get_device_info__type_support.c.o"
+  "CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/axbot_interfaces/srv/detail/get_device_info__type_support.c.o.d"
+  "CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/axbot_interfaces/srv/detail/set_control_mode__type_support.c.o"
+  "CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/axbot_interfaces/srv/detail/set_control_mode__type_support.c.o.d"
+  "CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/axbot_interfaces/srv/detail/set_emergency_stop__type_support.c.o"
+  "CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/axbot_interfaces/srv/detail/set_emergency_stop__type_support.c.o.d"
+  "libaxbot_interfaces__rosidl_typesupport_introspection_c.pdb"
+  "libaxbot_interfaces__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/axbot_interfaces/msg/detail/device_info__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/axbot_interfaces/msg/detail/device_info__type_support.c"
+  "rosidl_typesupport_introspection_c/axbot_interfaces/msg/detail/planning_state__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/axbot_interfaces/msg/detail/planning_state__type_support.c"
+  "rosidl_typesupport_introspection_c/axbot_interfaces/msg/detail/robot_pose__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/axbot_interfaces/msg/detail/robot_pose__type_support.c"
+  "rosidl_typesupport_introspection_c/axbot_interfaces/msg/detail/slam_state__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/axbot_interfaces/msg/detail/slam_state__type_support.c"
+  "rosidl_typesupport_introspection_c/axbot_interfaces/msg/detail/wheel_state__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/axbot_interfaces/msg/detail/wheel_state__type_support.c"
+  "rosidl_typesupport_introspection_c/axbot_interfaces/srv/detail/get_device_info__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/axbot_interfaces/srv/detail/get_device_info__type_support.c"
+  "rosidl_typesupport_introspection_c/axbot_interfaces/srv/detail/set_control_mode__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/axbot_interfaces/srv/detail/set_control_mode__type_support.c"
+  "rosidl_typesupport_introspection_c/axbot_interfaces/srv/detail/set_emergency_stop__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/axbot_interfaces/srv/detail/set_emergency_stop__type_support.c"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

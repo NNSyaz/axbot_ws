@@ -1,0 +1,3 @@
+[console_scripts]
+axbot_node = axbot_driver.axbot_node:main
+scan_bridge = axbot_driver.scan_bridge:main

@@ -1,0 +1,31 @@
+axbot_node:
+  ros__parameters:
+    # Robot connection settings
+    robot_ip: "192.168.0.250"
+    robot_port: 8090
+    secret: ""
+    
+    # WebSocket settings
+    ws_url: "ws://192.168.0.250:8090/ws/v2/topics"
+    reconnect_interval: 5.0  # seconds
+    
+    # Publishing rates (Hz)
+    device_info_rate: 0.1    # Slow: device info doesn't change often
+    
+    # Frame IDs
+    base_frame: "base_link"
+    odom_frame: "odom"
+    
+    # Initial control mode: "auto", "remote", or "manual"
+    initial_control_mode: "remote"
+    
+    # Topics to subscribe from robot (websocket)
+    subscribe_topics:
+      - "/tracked_pose"
+      - "/slam_state"
+      - "/wheel_state"
+      - "/planning_state"
+    
+    # Twist command timeout (seconds)
+    # If no twist_feedback received within this time, log warning
+    twist_timeout: 2.0

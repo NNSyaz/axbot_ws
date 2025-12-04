@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "axbot_interfaces__py",
+		"source" : "/media/roboserver/DATA/axbot_ws/build/axbot_interfaces/axbot_interfaces__py"
+	}
+}
