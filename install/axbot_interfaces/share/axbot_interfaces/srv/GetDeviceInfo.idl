@@ -1,1 +1,41 @@
-/media/roboserver/DATA/axbot_ws/build/axbot_interfaces/rosidl_adapter/axbot_interfaces/srv/GetDeviceInfo.idl
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from axbot_interfaces/srv/GetDeviceInfo.srv
+// generated code does not contain a copyright notice
+
+
+module axbot_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "Empty request")
+    struct GetDeviceInfo_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct GetDeviceInfo_Response {
+      boolean success;
+
+      string rosversion;
+
+      string rosdistro;
+
+      string axbot_version;
+
+      string model;
+
+      string serial_number;
+
+      string device_name;
+
+      string nickname;
+
+      float inscribed_radius;
+
+      float height;
+
+      float thickness;
+
+      float wheel_distance;
+
+      float width;
+    };
+  };
+};

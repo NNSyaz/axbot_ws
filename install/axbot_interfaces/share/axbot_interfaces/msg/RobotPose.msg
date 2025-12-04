@@ -1,1 +1,3 @@
-/media/roboserver/DATA/axbot_ws/src/axbot_interfaces/msg/RobotPose.msg
+float32 x         
+float32 y          
+float32 orientation  

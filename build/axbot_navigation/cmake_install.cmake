@@ -43,7 +43,70 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/media/roboserver/DATA/axbot_ws/build/axbot_navigation/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/axbot_navigation" TYPE DIRECTORY FILES
+    "/media/roboserver/DATA/axbot_ws/src/axbot_navigation/config"
+    "/media/roboserver/DATA/axbot_ws/src/axbot_navigation/launch"
+    "/media/roboserver/DATA/axbot_ws/src/axbot_navigation/maps"
+    )
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/media/roboserver/DATA/axbot_ws/build/axbot_navigation/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/axbot_navigation")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/media/roboserver/DATA/axbot_ws/build/axbot_navigation/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/axbot_navigation")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/axbot_navigation/environment" TYPE FILE FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/axbot_navigation/environment" TYPE FILE FILES "/media/roboserver/DATA/axbot_ws/build/axbot_navigation/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/axbot_navigation/environment" TYPE FILE FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/axbot_navigation/environment" TYPE FILE FILES "/media/roboserver/DATA/axbot_ws/build/axbot_navigation/ament_cmake_environment_hooks/path.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/axbot_navigation" TYPE FILE FILES "/media/roboserver/DATA/axbot_ws/build/axbot_navigation/ament_cmake_environment_hooks/local_setup.bash")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/axbot_navigation" TYPE FILE FILES "/media/roboserver/DATA/axbot_ws/build/axbot_navigation/ament_cmake_environment_hooks/local_setup.sh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/axbot_navigation" TYPE FILE FILES "/media/roboserver/DATA/axbot_ws/build/axbot_navigation/ament_cmake_environment_hooks/local_setup.zsh")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/axbot_navigation" TYPE FILE FILES "/media/roboserver/DATA/axbot_ws/build/axbot_navigation/ament_cmake_environment_hooks/local_setup.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/axbot_navigation" TYPE FILE FILES "/media/roboserver/DATA/axbot_ws/build/axbot_navigation/ament_cmake_environment_hooks/package.dsv")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/media/roboserver/DATA/axbot_ws/build/axbot_navigation/ament_cmake_index/share/ament_index/resource_index/packages/axbot_navigation")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/axbot_navigation/cmake" TYPE FILE FILES
+    "/media/roboserver/DATA/axbot_ws/build/axbot_navigation/ament_cmake_core/axbot_navigationConfig.cmake"
+    "/media/roboserver/DATA/axbot_ws/build/axbot_navigation/ament_cmake_core/axbot_navigationConfig-version.cmake"
+    )
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/axbot_navigation" TYPE FILE FILES "/media/roboserver/DATA/axbot_ws/src/axbot_navigation/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

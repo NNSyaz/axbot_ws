@@ -1,1 +1,2 @@
-/media/roboserver/DATA/axbot_ws/src/axbot_interfaces/msg/SlamState.msg
+string state      # "positioning", "mapping", etc.
+bool reliable

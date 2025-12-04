@@ -1,1 +1,36 @@
-/media/roboserver/DATA/axbot_ws/build/axbot_interfaces/rosidl_generator_type_description/axbot_interfaces/msg/WheelState.json
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "axbot_interfaces/msg/WheelState",
+      "fields": [
+        {
+          "name": "control_mode",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "emergency_stop_pressed",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "axbot_interfaces/msg/WheelState",
+      "hash_string": "RIHS01_faa10541e7cc932cf7755a80416dfae172847eb93710787e30ca76b541f90e3c"
+    }
+  ]
+}

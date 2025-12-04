@@ -1,1 +1,4 @@
-/media/roboserver/DATA/axbot_ws/src/axbot_interfaces/srv/SetControlMode.srv
+string mode  # "auto", "remote", or "manual"
+---
+bool success
+string message

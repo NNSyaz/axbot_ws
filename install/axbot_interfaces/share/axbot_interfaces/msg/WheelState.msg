@@ -1,1 +1,2 @@
-/media/roboserver/DATA/axbot_ws/src/axbot_interfaces/msg/WheelState.msg
+string control_mode  # "auto", "remote", or "manual"
+bool emergency_stop_pressed
