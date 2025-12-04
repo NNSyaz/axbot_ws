@@ -2,6 +2,7 @@
 /media/roboserver/DATA/axbot_ws/install/axbot_navigation/share/axbot_navigation/config/slam_toolbox.yaml
 /media/roboserver/DATA/axbot_ws/install/axbot_navigation/share/axbot_navigation/launch/navigation.launch.py
 /media/roboserver/DATA/axbot_ws/install/axbot_navigation/share/axbot_navigation/launch/slam.launch.py
+/media/roboserver/DATA/axbot_ws/install/axbot_navigation/share/axbot_navigation/launch/slam_activated.launch.py
 /media/roboserver/DATA/axbot_ws/install/axbot_navigation/share/axbot_navigation/launch/slam_navigation.launch.py
 /media/roboserver/DATA/axbot_ws/install/axbot_navigation/share/ament_index/resource_index/package_run_dependencies/axbot_navigation
 /media/roboserver/DATA/axbot_ws/install/axbot_navigation/share/ament_index/resource_index/parent_prefix_path/axbot_navigation

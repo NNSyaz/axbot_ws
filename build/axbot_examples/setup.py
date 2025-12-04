@@ -1,1 +1,0 @@
-/media/roboserver/DATA/axbot_ws/src/axbot_examples/setup.py

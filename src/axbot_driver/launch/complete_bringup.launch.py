@@ -1,5 +1,5 @@
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument
+from launch.actions import DeclareLaunchArgument, TimerAction
 from launch.conditions import IfCondition
 from launch_ros.actions import Node
 from launch.substitutions import LaunchConfiguration, Command
@@ -16,7 +16,7 @@ def generate_launch_description():
     params_file = os.path.join(axbot_driver_dir, 'config', 'axbot_params.yaml')
     rviz_config = os.path.join(axbot_driver_dir, 'rviz', 'slam_view.rviz')
     
-    # Arguments
+    # Launch arguments
     robot_ip_arg = DeclareLaunchArgument('robot_ip', default_value='192.168.0.250')
     use_sim_time_arg = DeclareLaunchArgument('use_sim_time', default_value='false')
     enable_slam_arg = DeclareLaunchArgument('enable_slam', default_value='true')
@@ -43,13 +43,16 @@ def generate_launch_description():
         parameters=[{'use_sim_time': use_sim_time}]
     )
     
-    # 3. AxBot Driver
+    # 3. AxBot Node
     axbot_driver = Node(
         package='axbot_driver',
         executable='axbot_node',
         output='screen',
         parameters=[params_file, {'robot_ip': robot_ip, 'use_sim_time': use_sim_time}]
     )
+    
+    # Optional: if your /scan publishes too fast, throttle in axbot_params.yaml or here
+    # e.g., qos_profile = {'depth': 50, 'reliability': 'best_effort'}
     
     # 4. SLAM Toolbox
     slam_toolbox = Node(
@@ -61,7 +64,7 @@ def generate_launch_description():
             'odom_frame': 'odom',
             'map_frame': 'map',
             'base_frame': 'base_link',
-            'scan_topic': '/scan',
+            'scan_topic': '/scan',  # ensure matches your robot
             'mode': 'mapping',
             'resolution': 0.05,
             'max_laser_range': 20.0,
@@ -70,13 +73,16 @@ def generate_launch_description():
         condition=IfCondition(LaunchConfiguration('enable_slam'))
     )
     
-    # 5. RViz
-    rviz = Node(
-        package='rviz2',
-        executable='rviz2',
-        arguments=['-d', rviz_config],
-        parameters=[{'use_sim_time': use_sim_time}],
-        condition=IfCondition(LaunchConfiguration('use_rviz'))
+    # 5. RViz2 (delayed 2 seconds to allow TF/URDF to publish)
+    rviz = TimerAction(
+        period=2.0,
+        actions=[Node(
+            package='rviz2',
+            executable='rviz2',
+            arguments=['-d', rviz_config],
+            parameters=[{'use_sim_time': use_sim_time}],
+            condition=IfCondition(LaunchConfiguration('use_rviz'))
+        )]
     )
     
     return LaunchDescription([

@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: pc2-listener
+Version: 0.0.1
+Summary: LiDAR PointCloud2 listener
+Maintainer: roboserver
+Maintainer-email: syazwaninurul02@gmail.com
+License: TODO: License declaration
+Provides-Extra: test
