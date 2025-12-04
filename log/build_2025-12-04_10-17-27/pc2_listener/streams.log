@@ -1,0 +1,18 @@
+[1.094s] Invoking command in '/media/roboserver/DATA/axbot_ws/build/pc2_listener': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/media/roboserver/DATA/axbot_ws/build/pc2_listener/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/roboserver/DATA/axbot_ws/install/pc2_listener/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /media/roboserver/DATA/axbot_ws/build/pc2_listener/build --no-deps
+[1.461s] running develop
+[1.719s] running egg_info
+[1.719s] creating pc2_listener.egg-info
+[1.743s] writing pc2_listener.egg-info/PKG-INFO
+[1.743s] writing dependency_links to pc2_listener.egg-info/dependency_links.txt
+[1.743s] writing entry points to pc2_listener.egg-info/entry_points.txt
+[1.744s] writing requirements to pc2_listener.egg-info/requires.txt
+[1.744s] writing top-level names to pc2_listener.egg-info/top_level.txt
+[1.744s] writing manifest file 'pc2_listener.egg-info/SOURCES.txt'
+[1.794s] reading manifest file 'pc2_listener.egg-info/SOURCES.txt'
+[1.795s] writing manifest file 'pc2_listener.egg-info/SOURCES.txt'
+[1.822s] running build_ext
+[1.822s] Creating /media/roboserver/DATA/axbot_ws/install/pc2_listener/lib/python3.12/site-packages/pc2-listener.egg-link (link to .)
+[1.822s] Installing pc2_listener script to /media/roboserver/DATA/axbot_ws/install/pc2_listener/lib/pc2_listener
+[1.822s] 
+[1.822s] Installed /media/roboserver/DATA/axbot_ws/build/pc2_listener
+[1.854s] Invoked command in '/media/roboserver/DATA/axbot_ws/build/pc2_listener' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/media/roboserver/DATA/axbot_ws/build/pc2_listener/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/roboserver/DATA/axbot_ws/install/pc2_listener/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /media/roboserver/DATA/axbot_ws/build/pc2_listener/build --no-deps

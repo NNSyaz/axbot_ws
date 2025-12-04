@@ -4,10 +4,10 @@
 
 #include <string.h>
 
+#include "axbot_interfaces/srv/detail/set_emergency_stop__functions.h"
 #include "axbot_interfaces/srv/detail/set_emergency_stop__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "axbot_interfaces/srv/detail/set_emergency_stop__struct.h"
-#include "axbot_interfaces/srv/detail/set_emergency_stop__functions.h"
 
 #ifdef __cplusplus
 extern "C"

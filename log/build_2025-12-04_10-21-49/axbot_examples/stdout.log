@@ -1,0 +1,18 @@
+running develop
+running egg_info
+writing axbot_examples.egg-info/PKG-INFO
+writing dependency_links to axbot_examples.egg-info/dependency_links.txt
+writing entry points to axbot_examples.egg-info/entry_points.txt
+writing requirements to axbot_examples.egg-info/requires.txt
+writing top-level names to axbot_examples.egg-info/top_level.txt
+reading manifest file 'axbot_examples.egg-info/SOURCES.txt'
+writing manifest file 'axbot_examples.egg-info/SOURCES.txt'
+running build_ext
+Creating /media/roboserver/DATA/axbot_ws/install/axbot_examples/lib/python3.12/site-packages/axbot-examples.egg-link (link to .)
+Installing device_info_reader script to /media/roboserver/DATA/axbot_ws/install/axbot_examples/lib/axbot_examples
+Installing pose_logger script to /media/roboserver/DATA/axbot_ws/install/axbot_examples/lib/axbot_examples
+Installing square_mover script to /media/roboserver/DATA/axbot_ws/install/axbot_examples/lib/axbot_examples
+Installing teleop_keyboard script to /media/roboserver/DATA/axbot_ws/install/axbot_examples/lib/axbot_examples
+
+Installed /media/roboserver/DATA/axbot_ws/build/axbot_examples
+running symlink_data

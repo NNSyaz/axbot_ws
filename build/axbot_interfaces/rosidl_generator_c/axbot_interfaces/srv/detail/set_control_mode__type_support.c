@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "axbot_interfaces/srv/detail/set_control_mode__functions.h"
-#include "rosidl_typesupport_interface/macros.h"
 #include "axbot_interfaces/srv/detail/set_control_mode__struct.h"
+#include "rosidl_typesupport_interface/macros.h"
 #include "axbot_interfaces/srv/detail/set_control_mode__type_support.h"
+#include "axbot_interfaces/srv/detail/set_control_mode__functions.h"
 
 #ifdef __cplusplus
 extern "C"

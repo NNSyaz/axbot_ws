@@ -1,0 +1,242 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-67a08ed17eb9895bb9e7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "axbot_interfaces__py",
+					"jsonFile" : "directory-axbot_interfaces__py-89e0b27a66bdb8a4a0b0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/media/roboserver/DATA/axbot_ws/build/axbot_interfaces/axbot_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "axbot_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_axbot_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_axbot_interfaces_egg-042dbb60e5d859e40693.json",
+					"name" : "ament_cmake_python_build_axbot_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_axbot_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_axbot_interfaces-23c9b4dadd3b49284f4e.json",
+					"name" : "ament_cmake_python_symlink_axbot_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "axbot_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-axbot_interfaces-b42869035ad5e2378efa.json",
+					"name" : "axbot_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "axbot_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-axbot_interfaces__cpp-96d1c1956362a0f3db9e.json",
+					"name" : "axbot_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "axbot_interfaces__py::@1364b99b8826b5536735",
+					"jsonFile" : "target-axbot_interfaces__py-38f7f078d0c1827fa771.json",
+					"name" : "axbot_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "axbot_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-axbot_interfaces__rosidl_generator_c-e76f02bb0d749cba1295.json",
+					"name" : "axbot_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "axbot_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-axbot_interfaces__rosidl_generator_py-830aeb4ad0f22329e6ea.json",
+					"name" : "axbot_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "axbot_interfaces__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-axbot_interfaces__rosidl_generator_type_description-10eaca7deb57d132f5d4.json",
+					"name" : "axbot_interfaces__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "axbot_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-axbot_interfaces__rosidl_typesupport_c-7ea5cad1053eb874e74b.json",
+					"name" : "axbot_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "axbot_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-axbot_interfaces__rosidl_typesupport_cpp-dbaec8bb98fad491191b.json",
+					"name" : "axbot_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "axbot_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-axbot_interfaces__rosidl_typesupport_fastrtps_c-bbf5249ef2f1bcf65b75.json",
+					"name" : "axbot_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "axbot_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-axbot_interfaces__rosidl_typesupport_fastrtps_cpp-458a3303a9c5ac3f13f1.json",
+					"name" : "axbot_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "axbot_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-axbot_interfaces__rosidl_typesupport_introspection_c-f0aabe124dbe504680c6.json",
+					"name" : "axbot_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "axbot_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-axbot_interfaces__rosidl_typesupport_introspection_cpp-fb8a433c86a6cb90f80b.json",
+					"name" : "axbot_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "axbot_interfaces_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-axbot_interfaces_s__rosidl_typesupport_c-74725300760fb7f82572.json",
+					"name" : "axbot_interfaces_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "axbot_interfaces_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-axbot_interfaces_s__rosidl_typesupport_fastrtps_c-4e38e103280f8d39f116.json",
+					"name" : "axbot_interfaces_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "axbot_interfaces_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-axbot_interfaces_s__rosidl_typesupport_introspection_c-78f020f549c8561855f1.json",
+					"name" : "axbot_interfaces_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "axbot_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-axbot_interfaces_uninstall-94c355a63edd105ffceb.json",
+					"name" : "axbot_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-5dfe9ee0ab543b664126.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/media/roboserver/DATA/axbot_ws/build/axbot_interfaces",
+		"source" : "/media/roboserver/DATA/axbot_ws/src/axbot_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

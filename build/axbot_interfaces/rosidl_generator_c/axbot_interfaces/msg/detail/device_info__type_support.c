@@ -5,8 +5,8 @@
 #include <string.h>
 
 #include "axbot_interfaces/msg/detail/device_info__functions.h"
-#include "rosidl_typesupport_interface/macros.h"
 #include "axbot_interfaces/msg/detail/device_info__struct.h"
+#include "rosidl_typesupport_interface/macros.h"
 #include "axbot_interfaces/msg/detail/device_info__type_support.h"
 
 #ifdef __cplusplus

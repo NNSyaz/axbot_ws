@@ -5,8 +5,8 @@
 #include <string.h>
 
 #include "rosidl_typesupport_interface/macros.h"
-#include "axbot_interfaces/msg/detail/wheel_state__struct.h"
 #include "axbot_interfaces/msg/detail/wheel_state__type_support.h"
+#include "axbot_interfaces/msg/detail/wheel_state__struct.h"
 #include "axbot_interfaces/msg/detail/wheel_state__functions.h"
 
 #ifdef __cplusplus

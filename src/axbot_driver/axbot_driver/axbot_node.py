@@ -7,6 +7,8 @@ import threading
 import math
 
 # ROS2 messages
+from sensor_msgs.msg import LaserScan
+from rclpy.qos import QoSProfile, ReliabilityPolicy, DurabilityPolicy
 from geometry_msgs.msg import Twist, Pose, Point, Quaternion, TransformStamped
 from nav_msgs.msg import Odometry
 from std_msgs.msg import Header
@@ -93,7 +95,19 @@ class AxBotNode(Node):
         self.planning_state_pub = self.create_publisher(
             PlanningState, '/axbot/planning_state', 10
         )
-        
+        # QoS profile for sensor data
+        self.sensor_qos = QoSProfile(
+            reliability=ReliabilityPolicy.BEST_EFFORT,
+            durability=DurabilityPolicy.VOLATILE,
+            depth=10
+        )
+
+        # LaserScan publisher
+        self.scan_pub = self.create_publisher(
+            LaserScan,
+            '/scan',
+            self.sensor_qos
+        )
         # TF broadcaster
         self.tf_broadcaster = TransformBroadcaster(self)
         
@@ -158,7 +172,7 @@ class AxBotNode(Node):
         self.declare_parameter('robot_ip', '192.168.25.25')
         self.declare_parameter('robot_port', 8090)
         self.declare_parameter('secret', '')
-        self.declare_parameter('ws_url', 'ws://192.168.25.25:8090/ws/v2/topics')
+        self.declare_parameter('ws_url', 'ws://192.168.0.250:8090/ws/v2/topics')
         self.declare_parameter('reconnect_interval', 5.0)
         self.declare_parameter('device_info_rate', 0.1)
         self.declare_parameter('base_frame', 'base_link')
@@ -168,35 +182,95 @@ class AxBotNode(Node):
             '/tracked_pose',
             '/slam_state',
             '/wheel_state',
-            '/planning_state'
+            '/planning_state',
+            '/scan_matched_points2',
+            '/horizontal_laser_2d/matched',
         ])
         self.declare_parameter('twist_timeout', 2.0)
-    
+        
+    def handle_scan_matched_points(self, data: dict):
+            """Convert scan_matched_points2 to LaserScan"""
+            try:
+                import math
+                
+                points = data.get('points', [])
+                if not points:
+                    return
+                
+                # LaserScan parameters for 360-degree scan
+                angle_min = -math.pi
+                angle_max = math.pi
+                angle_increment = math.radians(1.0)  # 1 degree resolution
+                num_readings = int((angle_max - angle_min) / angle_increment)
+                range_min = 0.15
+                range_max = 12.0
+                
+                # Initialize ranges
+                ranges = [range_max] * num_readings
+                intensities = [0.0] * num_readings
+                
+                # Convert points to polar coordinates
+                for point in points:
+                    if len(point) < 2:
+                        continue
+                    
+                    x, y = point[0], point[1]
+                    
+                    # Calculate range and angle
+                    range_val = math.sqrt(x*x + y*y)
+                    angle = math.atan2(y, x)
+                    
+                    if range_val < range_min or range_val > range_max:
+                        continue
+                    
+                    # Calculate index
+                    index = int((angle - angle_min) / angle_increment)
+                    if 0 <= index < num_readings:
+                        if range_val < ranges[index]:
+                            ranges[index] = range_val
+                            if len(point) > 3:
+                                intensities[index] = point[3]
+                
+                # Create and publish LaserScan
+                scan = LaserScan()
+                scan.header.stamp = self.get_clock().now().to_msg()
+                scan.header.frame_id = 'base_scan'
+                scan.angle_min = angle_min
+                scan.angle_max = angle_max
+                scan.angle_increment = angle_increment
+                scan.time_increment = 0.0
+                scan.scan_time = 0.1
+                scan.range_min = range_min
+                scan.range_max = range_max
+                scan.ranges = ranges
+                scan.intensities = intensities
+                
+                self.scan_pub.publish(scan)
+                
+            except Exception as e:
+                self.get_logger().error(f'Error converting point cloud: {e}')
+                
     def run_websocket(self):
         self.ws_loop = asyncio.new_event_loop()
         asyncio.set_event_loop(self.ws_loop)
         self.ws_loop.run_until_complete(self.ws_client.run())
-    
+
     def websocket_message_callback(self, topic: str, data: dict):
-        """
-        Handle incoming WebSocket messages.
-        
-        Args:
-            topic: Topic name (e.g., "/tracked_pose")
-            data: Message data as dict
-        """
-        try:
-            if topic == '/tracked_pose':
-                self.handle_tracked_pose(data)
-            elif topic == '/slam_state':
-                self.handle_slam_state(data)
-            elif topic == '/wheel_state':
-                self.handle_wheel_state(data)
-            elif topic == '/planning_state':
-                self.handle_planning_state(data)
-        except Exception as e:
-            self.get_logger().error(f'Error handling {topic}: {e}')
-    
+            """Handle incoming WebSocket messages."""
+            try:
+                if topic == '/tracked_pose':
+                    self.handle_tracked_pose(data)
+                elif topic == '/slam_state':
+                    self.handle_slam_state(data)
+                elif topic == '/wheel_state':
+                    self.handle_wheel_state(data)
+                elif topic == '/planning_state':
+                    self.handle_planning_state(data)
+                elif topic == '/scan_matched_points2':  # ADD THIS
+                    self.handle_scan_matched_points(data)
+            except Exception as e:
+                self.get_logger().error(f'Error handling {topic}: {e}')
+
     def handle_tracked_pose(self, data: dict):
         """Handle /tracked_pose messages from robot."""
         # data format: {"topic": "/tracked_pose", "pos": [x, y], "ori": theta}
