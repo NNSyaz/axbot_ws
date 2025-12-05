@@ -1,4 +1,0 @@
-string mode  # "auto", "remote", or "manual"
----
-bool success
-string message

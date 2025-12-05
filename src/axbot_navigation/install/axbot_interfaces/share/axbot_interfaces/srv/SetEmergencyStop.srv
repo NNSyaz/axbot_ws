@@ -1,4 +1,0 @@
-bool enable  # true to enable emergency stop, false to disable
----
-bool success
-string message

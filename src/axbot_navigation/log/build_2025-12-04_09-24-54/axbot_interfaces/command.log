@@ -1,2 +1,0 @@
-Invoking command in '/media/roboserver/DATA/axbot_ws/build/axbot_interfaces': /usr/bin/cmake --build /media/roboserver/DATA/axbot_ws/build/axbot_interfaces -- -j8 -l8
-Invoked command in '/media/roboserver/DATA/axbot_ws/build/axbot_interfaces' returned '2': /usr/bin/cmake --build /media/roboserver/DATA/axbot_ws/build/axbot_interfaces -- -j8 -l8

@@ -1,2 +1,0 @@
-[console_scripts]
-pc2_listener = pc2_listener.pc2_listener:main

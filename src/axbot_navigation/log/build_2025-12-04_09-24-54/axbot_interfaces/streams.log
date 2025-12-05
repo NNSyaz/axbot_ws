@@ -1,8 +1,0 @@
-[0.009s] Invoking command in '/media/roboserver/DATA/axbot_ws/build/axbot_interfaces': /usr/bin/cmake --build /media/roboserver/DATA/axbot_ws/build/axbot_interfaces -- -j8 -l8
-[0.086s] failed to create symbolic link '/media/roboserver/DATA/axbot_ws/build/axbot_interfaces/ament_cmake_python/axbot_interfaces/axbot_interfaces' because existing path cannot be removed: Is a directory
-[0.086s] [  1%] Built target axbot_interfaces__rosidl_generator_type_description
-[0.087s] gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_axbot_interfaces.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_axbot_interfaces] Error 1
-[0.087s] gmake[1]: *** [CMakeFiles/Makefile2:452: CMakeFiles/ament_cmake_python_symlink_axbot_interfaces.dir/all] Error 2
-[0.087s] gmake[1]: *** Waiting for unfinished jobs....
-[0.088s] gmake: *** [Makefile:146: all] Error 2
-[0.090s] Invoked command in '/media/roboserver/DATA/axbot_ws/build/axbot_interfaces' returned '2': /usr/bin/cmake --build /media/roboserver/DATA/axbot_ws/build/axbot_interfaces -- -j8 -l8
