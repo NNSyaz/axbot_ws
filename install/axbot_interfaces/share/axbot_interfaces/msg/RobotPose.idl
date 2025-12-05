@@ -1,16 +1,1 @@
-// generated from rosidl_adapter/resource/msg.idl.em
-// with input from axbot_interfaces/msg/RobotPose.msg
-// generated code does not contain a copyright notice
-
-
-module axbot_interfaces {
-  module msg {
-    struct RobotPose {
-      float x;
-
-      float y;
-
-      float orientation;
-    };
-  };
-};
+/media/roboserver/DATA/axbot_ws/build/axbot_interfaces/rosidl_adapter/axbot_interfaces/msg/RobotPose.idl

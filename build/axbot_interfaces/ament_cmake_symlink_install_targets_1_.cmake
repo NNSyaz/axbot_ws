@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/media/roboserver/DATA/axbot_ws/build/axbot_interfaces/rosidl_generator_py/axbot_interfaces/axbot_interfaces_s__rosidl_typesupport_introspection_c.so" "TARGETS" "axbot_interfaces_s__rosidl_typesupport_introspection_c" "DESTINATION" "lib/python3.12/site-packages/axbot_interfaces")

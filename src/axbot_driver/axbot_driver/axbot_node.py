@@ -29,14 +29,7 @@ from .websocket_client import AxBotWebSocketClient
 
 class AxBotNode(Node):
     """
-    ROS2 node for AxBot Fielder robot.
-    
-    Features:
-    - WebSocket connection for real-time data and control
-    - REST API for services and configuration
-    - Publishes: pose, odometry, SLAM state, wheel state
-    - Subscribes: cmd_vel for velocity control
-    - Services: set control mode, emergency stop, get device info
+    ROS2 node for AxBot Fielder robot with security and SLAM support.
     """
     
     def __init__(self):
@@ -72,6 +65,7 @@ class AxBotNode(Node):
         self.current_pose = None
         self.last_pose_time = None
         self.device_info_data = None
+        self.last_scan_time = self.get_clock().now()
         
         # Create callback group for services
         self.service_cb_group = ReentrantCallbackGroup()
@@ -95,6 +89,7 @@ class AxBotNode(Node):
         self.planning_state_pub = self.create_publisher(
             PlanningState, '/axbot/planning_state', 10
         )
+        
         # QoS profile for sensor data
         self.sensor_qos = QoSProfile(
             reliability=ReliabilityPolicy.BEST_EFFORT,
@@ -102,12 +97,13 @@ class AxBotNode(Node):
             depth=10
         )
 
-        # LaserScan publisher
+        # LaserScan publisher - CRITICAL for SLAM
         self.scan_pub = self.create_publisher(
             LaserScan,
             '/scan',
             self.sensor_qos
         )
+        
         # TF broadcaster
         self.tf_broadcaster = TransformBroadcaster(self)
         
@@ -166,10 +162,11 @@ class AxBotNode(Node):
         self.fetch_device_info()
         
         self.get_logger().info('AxBot Node initialized successfully')
+        self.get_logger().info('Waiting for scan data from WebSocket...')
     
     def declare_parameters_from_yaml(self):
         """Declare all parameters with default values."""
-        self.declare_parameter('robot_ip', '192.168.25.25')
+        self.declare_parameter('robot_ip', '192.168.0.250')
         self.declare_parameter('robot_port', 8090)
         self.declare_parameter('secret', '')
         self.declare_parameter('ws_url', 'ws://192.168.0.250:8090/ws/v2/topics')
@@ -177,7 +174,7 @@ class AxBotNode(Node):
         self.declare_parameter('device_info_rate', 0.1)
         self.declare_parameter('base_frame', 'base_link')
         self.declare_parameter('odom_frame', 'odom')
-        self.declare_parameter('initial_control_mode', 'auto')
+        self.declare_parameter('initial_control_mode', 'remote')
         self.declare_parameter('subscribe_topics', [
             '/tracked_pose',
             '/slam_state',
@@ -189,91 +186,110 @@ class AxBotNode(Node):
         self.declare_parameter('twist_timeout', 2.0)
         
     def handle_scan_matched_points(self, data: dict):
-            """Convert scan_matched_points2 to LaserScan"""
-            try:
-                import math
+        """Convert scan_matched_points2 to LaserScan - FIXED VERSION"""
+        try:
+            points = data.get('points', [])
+            if not points:
+                self.get_logger().warn('No points in scan data', throttle_duration_sec=5.0)
+                return
+            
+            # Log first scan
+            current_time = self.get_clock().now()
+            if (current_time - self.last_scan_time).nanoseconds > 5e9:  # Every 5 seconds
+                self.get_logger().info(f'Processing scan with {len(points)} points')
+                self.last_scan_time = current_time
+            
+            # LaserScan parameters for 360-degree scan
+            angle_min = -math.pi
+            angle_max = math.pi
+            angle_increment = math.radians(0.5)  # 0.5 degree resolution for better quality
+            num_readings = int((angle_max - angle_min) / angle_increment)
+            range_min = 0.15
+            range_max = 12.0
+            
+            # Initialize ranges with max value (no obstacle)
+            ranges = [range_max] * num_readings
+            intensities = [0.0] * num_readings
+            
+            # Convert points to polar coordinates and fill ranges
+            points_processed = 0
+            for point in points:
+                if len(point) < 2:
+                    continue
                 
-                points = data.get('points', [])
-                if not points:
-                    return
+                x, y = float(point[0]), float(point[1])
                 
-                # LaserScan parameters for 360-degree scan
-                angle_min = -math.pi
-                angle_max = math.pi
-                angle_increment = math.radians(1.0)  # 1 degree resolution
-                num_readings = int((angle_max - angle_min) / angle_increment)
-                range_min = 0.15
-                range_max = 12.0
+                # Calculate range and angle
+                range_val = math.sqrt(x*x + y*y)
+                angle = math.atan2(y, x)
                 
-                # Initialize ranges
-                ranges = [range_max] * num_readings
-                intensities = [0.0] * num_readings
+                # Skip if out of valid range
+                if range_val < range_min or range_val > range_max:
+                    continue
                 
-                # Convert points to polar coordinates
-                for point in points:
-                    if len(point) < 2:
-                        continue
-                    
-                    x, y = point[0], point[1]
-                    
-                    # Calculate range and angle
-                    range_val = math.sqrt(x*x + y*y)
-                    angle = math.atan2(y, x)
-                    
-                    if range_val < range_min or range_val > range_max:
-                        continue
-                    
-                    # Calculate index
-                    index = int((angle - angle_min) / angle_increment)
-                    if 0 <= index < num_readings:
-                        if range_val < ranges[index]:
-                            ranges[index] = range_val
-                            if len(point) > 3:
-                                intensities[index] = point[3]
+                # Calculate index in the ranges array
+                index = int((angle - angle_min) / angle_increment)
                 
-                # Create and publish LaserScan
-                scan = LaserScan()
-                scan.header.stamp = self.get_clock().now().to_msg()
-                scan.header.frame_id = 'base_scan'
-                scan.angle_min = angle_min
-                scan.angle_max = angle_max
-                scan.angle_increment = angle_increment
-                scan.time_increment = 0.0
-                scan.scan_time = 0.1
-                scan.range_min = range_min
-                scan.range_max = range_max
-                scan.ranges = ranges
-                scan.intensities = intensities
-                
-                self.scan_pub.publish(scan)
-                
-            except Exception as e:
-                self.get_logger().error(f'Error converting point cloud: {e}')
+                # Ensure index is within bounds
+                if 0 <= index < num_readings:
+                    # Keep minimum range for this angle (closest obstacle)
+                    if range_val < ranges[index]:
+                        ranges[index] = range_val
+                        # Set intensity if available
+                        if len(point) > 3:
+                            intensities[index] = float(point[3])
+                        points_processed += 1
+            
+            if points_processed == 0:
+                self.get_logger().warn('No valid points after filtering', throttle_duration_sec=5.0)
+                return
+            
+            # Create and publish LaserScan message
+            scan = LaserScan()
+            scan.header.stamp = self.get_clock().now().to_msg()
+            scan.header.frame_id = 'base_scan'  # Must match URDF
+            scan.angle_min = angle_min
+            scan.angle_max = angle_max
+            scan.angle_increment = angle_increment
+            scan.time_increment = 0.0
+            scan.scan_time = 0.1
+            scan.range_min = range_min
+            scan.range_max = range_max
+            scan.ranges = ranges
+            scan.intensities = intensities
+            
+            self.scan_pub.publish(scan)
+            
+        except Exception as e:
+            self.get_logger().error(f'Error converting point cloud: {e}')
                 
     def run_websocket(self):
+        """Run WebSocket client in asyncio event loop"""
         self.ws_loop = asyncio.new_event_loop()
         asyncio.set_event_loop(self.ws_loop)
         self.ws_loop.run_until_complete(self.ws_client.run())
 
     def websocket_message_callback(self, topic: str, data: dict):
-            """Handle incoming WebSocket messages."""
-            try:
-                if topic == '/tracked_pose':
-                    self.handle_tracked_pose(data)
-                elif topic == '/slam_state':
-                    self.handle_slam_state(data)
-                elif topic == '/wheel_state':
-                    self.handle_wheel_state(data)
-                elif topic == '/planning_state':
-                    self.handle_planning_state(data)
-                elif topic == '/scan_matched_points2':  # ADD THIS
-                    self.handle_scan_matched_points(data)
-            except Exception as e:
-                self.get_logger().error(f'Error handling {topic}: {e}')
+        """Handle incoming WebSocket messages."""
+        try:
+            if topic == '/tracked_pose':
+                self.handle_tracked_pose(data)
+            elif topic == '/slam_state':
+                self.handle_slam_state(data)
+            elif topic == '/wheel_state':
+                self.handle_wheel_state(data)
+            elif topic == '/planning_state':
+                self.handle_planning_state(data)
+            elif topic == '/scan_matched_points2':
+                self.handle_scan_matched_points(data)
+            elif topic == '/horizontal_laser_2d/matched':
+                # Alternative scan topic
+                self.handle_scan_matched_points(data)
+        except Exception as e:
+            self.get_logger().error(f'Error handling {topic}: {e}')
 
     def handle_tracked_pose(self, data: dict):
         """Handle /tracked_pose messages from robot."""
-        # data format: {"topic": "/tracked_pose", "pos": [x, y], "ori": theta}
         pos = data.get('pos', [0.0, 0.0])
         ori = data.get('ori', 0.0)
         
@@ -310,7 +326,6 @@ class AxBotNode(Node):
     
     def handle_slam_state(self, data: dict):
         """Handle /slam_state messages."""
-        # data format: {"topic": "/slam_state", "state": "positioning", "reliable": true}
         msg = SlamState()
         msg.state = data.get('state', 'unknown')
         msg.reliable = data.get('reliable', False)
@@ -318,8 +333,6 @@ class AxBotNode(Node):
     
     def handle_wheel_state(self, data: dict):
         """Handle /wheel_state messages."""
-        # data format: {"topic": "/wheel_state", "control_mode": "auto", 
-        #               "emergency_stop_pressed": false}
         msg = WheelState()
         msg.control_mode = data.get('control_mode', 'unknown')
         msg.emergency_stop_pressed = data.get('emergency_stop_pressed', False)
@@ -331,20 +344,19 @@ class AxBotNode(Node):
         msg.move_state = data.get('move_state', 'unknown')
         msg.going_back_to_charger = data.get('going_back_to_charger', False)
         msg.action_id = data.get('action_id', -1)
-        # Note: target_poses and charger_pose would need conversion from dict to Pose
         self.planning_state_pub.publish(msg)
     
     def cmd_vel_callback(self, msg: Twist):
+        """Handle velocity commands"""
         if not self.ws_client.is_connected:
             self.get_logger().warn('WebSocket not connected, cannot send cmd_vel')
             return
 
-    # Wait until WS loop is ready
         if self.ws_loop is None:
             self.get_logger().warn('WebSocket loop not ready')
             return
 
-    # Send async coroutine to websocket event loop
+        # Send async coroutine to websocket event loop
         asyncio.run_coroutine_threadsafe(
             self.ws_client.send_twist(
                 msg.linear.x,
@@ -428,12 +440,24 @@ class AxBotNode(Node):
     def get_device_info_callback(self, request, response):
         """Handle get_device_info service requests."""
         if self.device_info_data:
-            # Populate response with device info
             msg = DeviceInfo()
             msg.rosversion = self.device_info_data.get('rosversion', '')
             msg.rosdistro = self.device_info_data.get('rosdistro', '')
-            # ... (rest of fields)
-            response.info = msg
+            msg.axbot_version = self.device_info_data.get('axbot_version', '')
+            
+            device = self.device_info_data.get('device', {})
+            msg.model = device.get('model', '')
+            msg.serial_number = device.get('sn', '')
+            msg.device_name = device.get('name', '')
+            msg.nickname = device.get('nickname', '')
+            
+            robot = self.device_info_data.get('robot', {})
+            msg.inscribed_radius = float(robot.get('inscribed_radius', 0.0))
+            msg.height = float(robot.get('height', 0.0))
+            msg.thickness = float(robot.get('thickness', 0.0))
+            msg.wheel_distance = float(robot.get('wheel_distance', 0.0))
+            msg.width = float(robot.get('width', 0.0))
+            
             response.success = True
         else:
             response.success = False
@@ -443,16 +467,15 @@ class AxBotNode(Node):
         """Clean shutdown."""
         self.get_logger().info('Shutting down AxBot node...')
         
-        # Stop WebSocket
-        asyncio.run_coroutine_threadsafe(
-            self.ws_client.stop(),
-            asyncio.get_event_loop()
-        )
+        if self.ws_loop and self.ws_loop.is_running():
+            asyncio.run_coroutine_threadsafe(
+                self.ws_client.stop(),
+                self.ws_loop
+            )
         
-        # Close REST client
         self.rest_client.close()
-        
         super().destroy_node()
+
 
 def main(args=None):
     rclpy.init(args=args)
@@ -474,4 +497,3 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-

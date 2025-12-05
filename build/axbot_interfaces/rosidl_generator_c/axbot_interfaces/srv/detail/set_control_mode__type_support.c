@@ -4,9 +4,9 @@
 
 #include <string.h>
 
-#include "axbot_interfaces/srv/detail/set_control_mode__type_support.h"
 #include "axbot_interfaces/srv/detail/set_control_mode__functions.h"
 #include "axbot_interfaces/srv/detail/set_control_mode__struct.h"
+#include "axbot_interfaces/srv/detail/set_control_mode__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus

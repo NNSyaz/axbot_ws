@@ -6,8 +6,8 @@
 
 #include "axbot_interfaces/msg/detail/robot_pose__functions.h"
 #include "axbot_interfaces/msg/detail/robot_pose__type_support.h"
-#include "rosidl_typesupport_interface/macros.h"
 #include "axbot_interfaces/msg/detail/robot_pose__struct.h"
+#include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus
 extern "C"
