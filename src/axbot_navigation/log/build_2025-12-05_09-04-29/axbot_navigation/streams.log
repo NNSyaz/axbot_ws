@@ -1,0 +1,49 @@
+[0.010s] Invoking command in '/media/roboserver/DATA/axbot_ws/src/axbot_navigation/build/axbot_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/roboserver/DATA/axbot_ws/install/pc2_listener:/media/roboserver/DATA/axbot_ws/install/axbot_examples:/media/roboserver/DATA/axbot_ws/install/axbot_driver:/media/roboserver/DATA/autox_ws/install/fielder_teleop:/media/roboserver/DATA/autox_ws/install/fielder_odometry:/media/roboserver/DATA/autox_ws/install/fielder_navigation:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /media/roboserver/DATA/axbot_ws/src/axbot_navigation -DCMAKE_INSTALL_PREFIX=/media/roboserver/DATA/axbot_ws/src/axbot_navigation/install/axbot_navigation
+[0.850s] -- The C compiler identification is GNU 13.3.0
+[1.376s] -- The CXX compiler identification is GNU 13.3.0
+[1.483s] -- Detecting C compiler ABI info
+[1.703s] -- Detecting C compiler ABI info - done
+[1.715s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.716s] -- Detecting C compile features
+[1.717s] -- Detecting C compile features - done
+[1.735s] -- Detecting CXX compiler ABI info
+[1.907s] -- Detecting CXX compiler ABI info - done
+[1.917s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.917s] -- Detecting CXX compile features
+[1.918s] -- Detecting CXX compile features - done
+[2.126s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.338s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.665s] -- Configuring done (2.6s)
+[2.688s] -- Generating done (0.0s)
+[2.690s] -- Build files have been written to: /media/roboserver/DATA/axbot_ws/src/axbot_navigation/build/axbot_navigation
+[2.695s] Invoked command in '/media/roboserver/DATA/axbot_ws/src/axbot_navigation/build/axbot_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/roboserver/DATA/axbot_ws/install/pc2_listener:/media/roboserver/DATA/axbot_ws/install/axbot_examples:/media/roboserver/DATA/axbot_ws/install/axbot_driver:/media/roboserver/DATA/autox_ws/install/fielder_teleop:/media/roboserver/DATA/autox_ws/install/fielder_odometry:/media/roboserver/DATA/autox_ws/install/fielder_navigation:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /media/roboserver/DATA/axbot_ws/src/axbot_navigation -DCMAKE_INSTALL_PREFIX=/media/roboserver/DATA/axbot_ws/src/axbot_navigation/install/axbot_navigation
+[2.696s] Invoking command in '/media/roboserver/DATA/axbot_ws/src/axbot_navigation/build/axbot_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/roboserver/DATA/axbot_ws/install/pc2_listener:/media/roboserver/DATA/axbot_ws/install/axbot_examples:/media/roboserver/DATA/axbot_ws/install/axbot_driver:/media/roboserver/DATA/autox_ws/install/fielder_teleop:/media/roboserver/DATA/autox_ws/install/fielder_odometry:/media/roboserver/DATA/autox_ws/install/fielder_navigation:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /media/roboserver/DATA/axbot_ws/src/axbot_navigation/build/axbot_navigation -- -j8 -l8
+[2.737s] Invoked command in '/media/roboserver/DATA/axbot_ws/src/axbot_navigation/build/axbot_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/roboserver/DATA/axbot_ws/install/pc2_listener:/media/roboserver/DATA/axbot_ws/install/axbot_examples:/media/roboserver/DATA/axbot_ws/install/axbot_driver:/media/roboserver/DATA/autox_ws/install/fielder_teleop:/media/roboserver/DATA/autox_ws/install/fielder_odometry:/media/roboserver/DATA/autox_ws/install/fielder_navigation:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /media/roboserver/DATA/axbot_ws/src/axbot_navigation/build/axbot_navigation -- -j8 -l8
+[2.748s] Invoking command in '/media/roboserver/DATA/axbot_ws/src/axbot_navigation/build/axbot_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/roboserver/DATA/axbot_ws/install/pc2_listener:/media/roboserver/DATA/axbot_ws/install/axbot_examples:/media/roboserver/DATA/axbot_ws/install/axbot_driver:/media/roboserver/DATA/autox_ws/install/fielder_teleop:/media/roboserver/DATA/autox_ws/install/fielder_odometry:/media/roboserver/DATA/autox_ws/install/fielder_navigation:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /media/roboserver/DATA/axbot_ws/src/axbot_navigation/build/axbot_navigation
+[2.756s] -- Install configuration: ""
+[2.756s] -- Installing: /media/roboserver/DATA/axbot_ws/src/axbot_navigation/install/axbot_navigation/share/axbot_navigation/config
+[2.756s] -- Installing: /media/roboserver/DATA/axbot_ws/src/axbot_navigation/install/axbot_navigation/share/axbot_navigation/config/nav2_params.yaml
+[2.756s] -- Installing: /media/roboserver/DATA/axbot_ws/src/axbot_navigation/install/axbot_navigation/share/axbot_navigation/config/slam_params.yaml
+[2.756s] -- Installing: /media/roboserver/DATA/axbot_ws/src/axbot_navigation/install/axbot_navigation/share/axbot_navigation/config/slam_toolbox.yaml
+[2.757s] -- Installing: /media/roboserver/DATA/axbot_ws/src/axbot_navigation/install/axbot_navigation/share/axbot_navigation/launch
+[2.757s] -- Installing: /media/roboserver/DATA/axbot_ws/src/axbot_navigation/install/axbot_navigation/share/axbot_navigation/launch/navigation.launch.py
+[2.757s] -- Installing: /media/roboserver/DATA/axbot_ws/src/axbot_navigation/install/axbot_navigation/share/axbot_navigation/launch/slam.launch.py
+[2.764s] -- Installing: /media/roboserver/DATA/axbot_ws/src/axbot_navigation/install/axbot_navigation/share/axbot_navigation/launch/slam_activated.launch.py
+[2.765s] -- Installing: /media/roboserver/DATA/axbot_ws/src/axbot_navigation/install/axbot_navigation/share/axbot_navigation/launch/slam_navigation.launch.py
+[2.765s] -- Installing: /media/roboserver/DATA/axbot_ws/src/axbot_navigation/install/axbot_navigation/share/axbot_navigation/maps
+[2.765s] -- Installing: /media/roboserver/DATA/axbot_ws/src/axbot_navigation/install/axbot_navigation/share/ament_index/resource_index/package_run_dependencies/axbot_navigation
+[2.766s] -- Installing: /media/roboserver/DATA/axbot_ws/src/axbot_navigation/install/axbot_navigation/share/ament_index/resource_index/parent_prefix_path/axbot_navigation
+[2.766s] -- Installing: /media/roboserver/DATA/axbot_ws/src/axbot_navigation/install/axbot_navigation/share/axbot_navigation/environment/ament_prefix_path.sh
+[2.766s] -- Installing: /media/roboserver/DATA/axbot_ws/src/axbot_navigation/install/axbot_navigation/share/axbot_navigation/environment/ament_prefix_path.dsv
+[2.766s] -- Installing: /media/roboserver/DATA/axbot_ws/src/axbot_navigation/install/axbot_navigation/share/axbot_navigation/environment/path.sh
+[2.767s] -- Installing: /media/roboserver/DATA/axbot_ws/src/axbot_navigation/install/axbot_navigation/share/axbot_navigation/environment/path.dsv
+[2.767s] -- Installing: /media/roboserver/DATA/axbot_ws/src/axbot_navigation/install/axbot_navigation/share/axbot_navigation/local_setup.bash
+[2.767s] -- Installing: /media/roboserver/DATA/axbot_ws/src/axbot_navigation/install/axbot_navigation/share/axbot_navigation/local_setup.sh
+[2.767s] -- Installing: /media/roboserver/DATA/axbot_ws/src/axbot_navigation/install/axbot_navigation/share/axbot_navigation/local_setup.zsh
+[2.767s] -- Installing: /media/roboserver/DATA/axbot_ws/src/axbot_navigation/install/axbot_navigation/share/axbot_navigation/local_setup.dsv
+[2.767s] -- Installing: /media/roboserver/DATA/axbot_ws/src/axbot_navigation/install/axbot_navigation/share/axbot_navigation/package.dsv
+[2.768s] -- Installing: /media/roboserver/DATA/axbot_ws/src/axbot_navigation/install/axbot_navigation/share/ament_index/resource_index/packages/axbot_navigation
+[2.768s] -- Installing: /media/roboserver/DATA/axbot_ws/src/axbot_navigation/install/axbot_navigation/share/axbot_navigation/cmake/axbot_navigationConfig.cmake
+[2.768s] -- Installing: /media/roboserver/DATA/axbot_ws/src/axbot_navigation/install/axbot_navigation/share/axbot_navigation/cmake/axbot_navigationConfig-version.cmake
+[2.768s] -- Installing: /media/roboserver/DATA/axbot_ws/src/axbot_navigation/install/axbot_navigation/share/axbot_navigation/package.xml
+[2.770s] Invoked command in '/media/roboserver/DATA/axbot_ws/src/axbot_navigation/build/axbot_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/roboserver/DATA/axbot_ws/install/pc2_listener:/media/roboserver/DATA/axbot_ws/install/axbot_examples:/media/roboserver/DATA/axbot_ws/install/axbot_driver:/media/roboserver/DATA/autox_ws/install/fielder_teleop:/media/roboserver/DATA/autox_ws/install/fielder_odometry:/media/roboserver/DATA/autox_ws/install/fielder_navigation:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /media/roboserver/DATA/axbot_ws/src/axbot_navigation/build/axbot_navigation

@@ -1,0 +1,485 @@
+[0.026s] Invoking command in '/media/roboserver/DATA/axbot_ws/build/axbot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/roboserver/DATA/axbot_ws/install/pc2_listener:/media/roboserver/DATA/axbot_ws/install/axbot_examples:/media/roboserver/DATA/axbot_ws/install/axbot_driver:/media/roboserver/DATA/autox_ws/install/fielder_teleop:/media/roboserver/DATA/autox_ws/install/fielder_odometry:/media/roboserver/DATA/autox_ws/install/fielder_navigation:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /media/roboserver/DATA/axbot_ws/src/axbot_interfaces -DCMAKE_INSTALL_PREFIX=/media/roboserver/DATA/axbot_ws/install/axbot_interfaces
+[0.094s] -- The C compiler identification is GNU 13.3.0
+[0.159s] -- The CXX compiler identification is GNU 13.3.0
+[0.176s] -- Detecting C compiler ABI info
+[0.270s] -- Detecting C compiler ABI info - done
+[0.280s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.280s] -- Detecting C compile features
+[0.281s] -- Detecting C compile features - done
+[0.291s] -- Detecting CXX compiler ABI info
+[0.405s] -- Detecting CXX compiler ABI info - done
+[0.424s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.424s] -- Detecting CXX compile features
+[0.425s] -- Detecting CXX compile features - done
+[0.432s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.635s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.782s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.848s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.871s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.897s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.932s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.981s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[1.000s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[1.028s] -- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.706s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[2.541s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.876s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.881s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[3.060s] -- Found PythonExtra: /usr/bin/python3  
+[3.522s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[3.587s] -- Configuring done (3.5s)
+[3.661s] -- Generating done (0.1s)
+[3.673s] -- Build files have been written to: /media/roboserver/DATA/axbot_ws/build/axbot_interfaces
+[3.682s] Invoked command in '/media/roboserver/DATA/axbot_ws/build/axbot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/roboserver/DATA/axbot_ws/install/pc2_listener:/media/roboserver/DATA/axbot_ws/install/axbot_examples:/media/roboserver/DATA/axbot_ws/install/axbot_driver:/media/roboserver/DATA/autox_ws/install/fielder_teleop:/media/roboserver/DATA/autox_ws/install/fielder_odometry:/media/roboserver/DATA/autox_ws/install/fielder_navigation:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /media/roboserver/DATA/axbot_ws/src/axbot_interfaces -DCMAKE_INSTALL_PREFIX=/media/roboserver/DATA/axbot_ws/install/axbot_interfaces
+[3.683s] Invoking command in '/media/roboserver/DATA/axbot_ws/build/axbot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/roboserver/DATA/axbot_ws/install/pc2_listener:/media/roboserver/DATA/axbot_ws/install/axbot_examples:/media/roboserver/DATA/axbot_ws/install/axbot_driver:/media/roboserver/DATA/autox_ws/install/fielder_teleop:/media/roboserver/DATA/autox_ws/install/fielder_odometry:/media/roboserver/DATA/autox_ws/install/fielder_navigation:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /media/roboserver/DATA/axbot_ws/build/axbot_interfaces -- -j8 -l8
+[3.798s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[3.820s] [  1%] Built target ament_cmake_python_copy_axbot_interfaces
+[4.148s] running egg_info
+[4.149s] creating axbot_interfaces.egg-info
+[4.179s] writing axbot_interfaces.egg-info/PKG-INFO
+[4.179s] writing dependency_links to axbot_interfaces.egg-info/dependency_links.txt
+[4.179s] writing top-level names to axbot_interfaces.egg-info/top_level.txt
+[4.179s] writing manifest file 'axbot_interfaces.egg-info/SOURCES.txt'
+[4.196s] [  1%] Built target axbot_interfaces__rosidl_generator_type_description
+[4.207s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[4.221s] [  1%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[4.260s] reading manifest file 'axbot_interfaces.egg-info/SOURCES.txt'
+[4.261s] writing manifest file 'axbot_interfaces.egg-info/SOURCES.txt'
+[4.291s] [  1%] Built target ament_cmake_python_build_axbot_interfaces_egg
+[4.926s] [  1%] Built target axbot_interfaces__cpp
+[5.127s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/axbot_interfaces/msg/detail/device_info__functions.c.o[0m
+[5.127s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/axbot_interfaces/msg/detail/device_info__description.c.o[0m
+[5.127s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/axbot_interfaces/msg/detail/device_info__type_support.c.o[0m
+[5.128s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/axbot_interfaces/msg/detail/wheel_state__description.c.o[0m
+[5.128s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/axbot_interfaces/msg/detail/wheel_state__functions.c.o[0m
+[5.129s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/axbot_interfaces/msg/detail/slam_state__description.c.o[0m
+[5.136s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/axbot_interfaces/msg/detail/wheel_state__type_support.c.o[0m
+[5.136s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/axbot_interfaces/msg/detail/slam_state__functions.c.o[0m
+[5.180s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/axbot_interfaces/msg/detail/slam_state__type_support.c.o[0m
+[5.186s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/axbot_interfaces/msg/detail/planning_state__description.c.o[0m
+[5.192s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/axbot_interfaces/msg/detail/planning_state__functions.c.o[0m
+[5.196s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/axbot_interfaces/msg/detail/robot_pose__description.c.o[0m
+[5.200s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/axbot_interfaces/msg/detail/planning_state__type_support.c.o[0m
+[5.214s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/axbot_interfaces/msg/detail/robot_pose__functions.c.o[0m
+[5.229s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/axbot_interfaces/msg/detail/robot_pose__type_support.c.o[0m
+[5.230s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/axbot_interfaces/srv/detail/set_control_mode__description.c.o[0m
+[5.253s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/axbot_interfaces/srv/detail/set_control_mode__functions.c.o[0m
+[5.261s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/axbot_interfaces/srv/detail/set_control_mode__type_support.c.o[0m
+[5.264s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/axbot_interfaces/srv/detail/set_emergency_stop__description.c.o[0m
+[5.265s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/axbot_interfaces/srv/detail/set_emergency_stop__functions.c.o[0m
+[5.281s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/axbot_interfaces/srv/detail/set_emergency_stop__type_support.c.o[0m
+[5.281s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/axbot_interfaces/srv/detail/get_device_info__description.c.o[0m
+[5.295s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/axbot_interfaces/srv/detail/get_device_info__functions.c.o[0m
+[5.314s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/axbot_interfaces/srv/detail/get_device_info__type_support.c.o[0m
+[5.397s] [  1%] [32m[1mLinking C shared library libaxbot_interfaces__rosidl_generator_c.so[0m
+[5.443s] [  1%] Built target axbot_interfaces__rosidl_generator_c
+[5.456s] [  1%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[5.457s] [  1%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[5.461s] [  1%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[5.462s] [  1%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[5.462s] [  1%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[5.462s] [  1%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[6.102s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/axbot_interfaces/msg/slam_state__type_support.cpp.o[0m
+[6.102s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/axbot_interfaces/msg/wheel_state__type_support.cpp.o[0m
+[6.102s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/axbot_interfaces/msg/device_info__type_support.cpp.o[0m
+[6.173s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/axbot_interfaces/msg/planning_state__type_support.cpp.o[0m
+[6.174s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/axbot_interfaces/srv/set_control_mode__type_support.cpp.o[0m
+[6.174s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/axbot_interfaces/msg/robot_pose__type_support.cpp.o[0m
+[6.239s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/axbot_interfaces/srv/set_emergency_stop__type_support.cpp.o[0m
+[6.248s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/axbot_interfaces/srv/get_device_info__type_support.cpp.o[0m
+[6.331s] [  1%] [32m[1mLinking CXX shared library libaxbot_interfaces__rosidl_typesupport_c.so[0m
+[6.352s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/axbot_interfaces/msg/device_info__type_support.cpp.o[0m
+[6.354s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/axbot_interfaces/msg/wheel_state__type_support.cpp.o[0m
+[6.360s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/axbot_interfaces/msg/slam_state__type_support.cpp.o[0m
+[6.392s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/axbot_interfaces/msg/detail/device_info__type_support.cpp.o[0m
+[6.439s] [  1%] Built target axbot_interfaces__rosidl_typesupport_c
+[6.460s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/axbot_interfaces/msg/detail/wheel_state__type_support.cpp.o[0m
+[6.688s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/axbot_interfaces/msg/detail/device_info__type_support.c.o[0m
+[6.851s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/axbot_interfaces/msg/detail/wheel_state__type_support.c.o[0m
+[6.928s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/axbot_interfaces/msg/detail/slam_state__type_support.c.o[0m
+[6.966s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/axbot_interfaces/msg/detail/planning_state__type_support.c.o[0m
+[6.999s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/axbot_interfaces/msg/detail/robot_pose__type_support.c.o[0m
+[7.001s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/axbot_interfaces/msg/planning_state__type_support.cpp.o[0m
+[7.001s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/axbot_interfaces/msg/robot_pose__type_support.cpp.o[0m
+[7.023s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/axbot_interfaces/srv/set_control_mode__type_support.cpp.o[0m
+[7.080s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/axbot_interfaces/msg/detail/slam_state__type_support.cpp.o[0m
+[7.097s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/axbot_interfaces/srv/detail/set_emergency_stop__type_support.c.o[0m
+[7.097s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/axbot_interfaces/srv/detail/set_control_mode__type_support.c.o[0m
+[7.210s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/axbot_interfaces/srv/set_emergency_stop__type_support.cpp.o[0m
+[7.234s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/axbot_interfaces/srv/detail/get_device_info__type_support.c.o[0m
+[7.240s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/axbot_interfaces/msg/detail/dds_fastrtps/device_info__type_support.cpp.o[0m
+[7.339s] [  1%] [32m[1mLinking C shared library libaxbot_interfaces__rosidl_typesupport_introspection_c.so[0m
+[7.411s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/axbot_interfaces/msg/detail/device_info__type_support_c.cpp.o[0m
+[7.449s] [  1%] Built target axbot_interfaces__rosidl_typesupport_introspection_c
+[7.482s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/axbot_interfaces/msg/detail/dds_fastrtps/wheel_state__type_support.cpp.o[0m
+[7.625s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/axbot_interfaces/msg/detail/dds_fastrtps/slam_state__type_support.cpp.o[0m
+[7.636s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/axbot_interfaces/msg/detail/dds_fastrtps/planning_state__type_support.cpp.o[0m
+[7.753s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/axbot_interfaces/msg/detail/planning_state__type_support.cpp.o[0m
+[7.837s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/axbot_interfaces/msg/detail/wheel_state__type_support_c.cpp.o[0m
+[7.973s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/axbot_interfaces/srv/get_device_info__type_support.cpp.o[0m
+[8.186s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/axbot_interfaces/msg/detail/dds_fastrtps/robot_pose__type_support.cpp.o[0m
+[8.300s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/axbot_interfaces/msg/detail/robot_pose__type_support.cpp.o[0m
+[8.358s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/axbot_interfaces/msg/detail/slam_state__type_support_c.cpp.o[0m
+[8.396s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/axbot_interfaces/msg/detail/planning_state__type_support_c.cpp.o[0m
+[8.542s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/axbot_interfaces/msg/detail/robot_pose__type_support_c.cpp.o[0m
+[8.569s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/axbot_interfaces/srv/detail/set_control_mode__type_support.cpp.o[0m
+[8.704s] [  1%] [32m[1mLinking CXX shared library libaxbot_interfaces__rosidl_typesupport_cpp.so[0m
+[8.760s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/axbot_interfaces/srv/detail/dds_fastrtps/set_control_mode__type_support.cpp.o[0m
+[8.882s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/axbot_interfaces/srv/detail/dds_fastrtps/set_emergency_stop__type_support.cpp.o[0m
+[8.885s] [  1%] Built target axbot_interfaces__rosidl_typesupport_cpp
+[8.900s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/axbot_interfaces/srv/detail/set_control_mode__type_support_c.cpp.o[0m
+[9.102s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/axbot_interfaces/srv/detail/set_emergency_stop__type_support.cpp.o[0m
+[9.333s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/axbot_interfaces/srv/detail/dds_fastrtps/get_device_info__type_support.cpp.o[0m
+[9.383s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/axbot_interfaces/srv/detail/set_emergency_stop__type_support_c.cpp.o[0m
+[9.398s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/axbot_interfaces/srv/detail/get_device_info__type_support_c.cpp.o[0m
+[9.443s] [  1%] [32mBuilding CXX object CMakeFiles/axbot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/axbot_interfaces/srv/detail/get_device_info__type_support.cpp.o[0m
+[10.146s] [  1%] [32m[1mLinking CXX shared library libaxbot_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[10.244s] [  1%] Built target axbot_interfaces__rosidl_typesupport_introspection_cpp
+[10.343s] [  1%] [32m[1mLinking CXX shared library libaxbot_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[10.419s] [  1%] [32m[1mLinking CXX shared library libaxbot_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[10.509s] [  1%] Built target axbot_interfaces__rosidl_typesupport_fastrtps_c
+[10.574s] [  1%] Built target axbot_interfaces__rosidl_typesupport_fastrtps_cpp
+[10.596s] [  1%] Built target axbot_interfaces
+[10.617s] [  1%] [34m[1mGenerating Python code for ROS interfaces[0m
+[11.706s] [  1%] Built target axbot_interfaces__py
+[11.734s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/axbot_interfaces/srv/_get_device_info_s.c.o[0m
+[11.735s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/axbot_interfaces/msg/_slam_state_s.c.o[0m
+[11.735s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/axbot_interfaces/msg/_wheel_state_s.c.o[0m
+[11.735s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/axbot_interfaces/msg/_robot_pose_s.c.o[0m
+[11.735s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/axbot_interfaces/srv/_set_control_mode_s.c.o[0m
+[11.735s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/axbot_interfaces/srv/_set_emergency_stop_s.c.o[0m
+[11.738s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/axbot_interfaces/msg/_device_info_s.c.o[0m
+[11.738s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/axbot_interfaces/msg/_planning_state_s.c.o[0m
+[12.054s] [  1%] [32m[1mLinking C shared library libaxbot_interfaces__rosidl_generator_py.so[0m
+[12.102s] [  1%] Built target axbot_interfaces__rosidl_generator_py
+[12.122s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/axbot_interfaces/_axbot_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[12.122s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/axbot_interfaces/_axbot_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[12.122s] [  1%] [32mBuilding C object CMakeFiles/axbot_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/axbot_interfaces/_axbot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[12.263s] [  1%] [32m[1mLinking C shared module rosidl_generator_py/axbot_interfaces/axbot_interfaces_s__rosidl_typesupport_c.so[0m
+[12.266s] [  1%] [32m[1mLinking C shared module rosidl_generator_py/axbot_interfaces/axbot_interfaces_s__rosidl_typesupport_introspection_c.so[0m
+[12.270s] [  1%] [32m[1mLinking C shared module rosidl_generator_py/axbot_interfaces/axbot_interfaces_s__rosidl_typesupport_fastrtps_c.so[0m
+[12.299s] [  1%] Built target axbot_interfaces_s__rosidl_typesupport_c
+[12.301s] [  1%] Built target axbot_interfaces_s__rosidl_typesupport_introspection_c
+[12.305s] [  1%] Built target axbot_interfaces_s__rosidl_typesupport_fastrtps_c
+[12.316s] Invoked command in '/media/roboserver/DATA/axbot_ws/build/axbot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/roboserver/DATA/axbot_ws/install/pc2_listener:/media/roboserver/DATA/axbot_ws/install/axbot_examples:/media/roboserver/DATA/axbot_ws/install/axbot_driver:/media/roboserver/DATA/autox_ws/install/fielder_teleop:/media/roboserver/DATA/autox_ws/install/fielder_odometry:/media/roboserver/DATA/autox_ws/install/fielder_navigation:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /media/roboserver/DATA/axbot_ws/build/axbot_interfaces -- -j8 -l8
+[12.317s] Invoking command in '/media/roboserver/DATA/axbot_ws/build/axbot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/roboserver/DATA/axbot_ws/install/pc2_listener:/media/roboserver/DATA/axbot_ws/install/axbot_examples:/media/roboserver/DATA/axbot_ws/install/axbot_driver:/media/roboserver/DATA/autox_ws/install/fielder_teleop:/media/roboserver/DATA/autox_ws/install/fielder_odometry:/media/roboserver/DATA/autox_ws/install/fielder_navigation:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /media/roboserver/DATA/axbot_ws/build/axbot_interfaces
+[12.325s] -- Install configuration: ""
+[12.325s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/ament_index/resource_index/rosidl_interfaces/axbot_interfaces
+[12.326s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/msg/DeviceInfo.json
+[12.326s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/msg/WheelState.json
+[12.326s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/msg/SlamState.json
+[12.326s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/msg/PlanningState.json
+[12.326s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/msg/RobotPose.json
+[12.326s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/srv/SetControlMode.json
+[12.326s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/srv/SetEmergencyStop.json
+[12.326s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/srv/GetDeviceInfo.json
+[12.326s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces
+[12.326s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg
+[12.327s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail
+[12.327s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/robot_pose__functions.h
+[12.327s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/robot_pose__struct.h
+[12.327s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/robot_pose__type_support.c
+[12.327s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/robot_pose__type_support.h
+[12.327s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/slam_state__description.c
+[12.327s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/slam_state__functions.c
+[12.327s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/slam_state__functions.h
+[12.327s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/slam_state__struct.h
+[12.327s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/slam_state__type_support.c
+[12.327s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/slam_state__type_support.h
+[12.327s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/wheel_state__description.c
+[12.328s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/wheel_state__functions.c
+[12.328s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/wheel_state__functions.h
+[12.328s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/wheel_state__struct.h
+[12.328s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/wheel_state__type_support.c
+[12.328s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/wheel_state__type_support.h
+[12.328s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/device_info__description.c
+[12.328s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/device_info__functions.c
+[12.328s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/device_info__functions.h
+[12.329s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/device_info__struct.h
+[12.329s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/device_info__type_support.c
+[12.329s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/device_info__type_support.h
+[12.329s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/planning_state__description.c
+[12.329s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/planning_state__functions.c
+[12.329s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/planning_state__functions.h
+[12.329s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/planning_state__struct.h
+[12.329s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/planning_state__type_support.c
+[12.329s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/planning_state__type_support.h
+[12.330s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/robot_pose__description.c
+[12.330s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/robot_pose__functions.c
+[12.330s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/device_info.h
+[12.330s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/planning_state.h
+[12.330s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/robot_pose.h
+[12.330s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/rosidl_generator_c__visibility_control.h
+[12.330s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/slam_state.h
+[12.330s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/wheel_state.h
+[12.330s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv
+[12.330s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail
+[12.330s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/get_device_info__description.c
+[12.331s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/get_device_info__functions.c
+[12.331s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/get_device_info__functions.h
+[12.331s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/get_device_info__struct.h
+[12.331s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/get_device_info__type_support.c
+[12.331s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/get_device_info__type_support.h
+[12.331s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/set_control_mode__description.c
+[12.331s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/set_control_mode__functions.c
+[12.331s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/set_control_mode__functions.h
+[12.331s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/set_control_mode__struct.h
+[12.331s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/set_control_mode__type_support.c
+[12.332s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/set_control_mode__type_support.h
+[12.332s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/set_emergency_stop__description.c
+[12.332s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/set_emergency_stop__functions.c
+[12.332s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/set_emergency_stop__functions.h
+[12.332s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/set_emergency_stop__struct.h
+[12.332s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/set_emergency_stop__type_support.c
+[12.332s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/set_emergency_stop__type_support.h
+[12.332s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/get_device_info.h
+[12.332s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/set_control_mode.h
+[12.332s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/set_emergency_stop.h
+[12.333s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/environment/library_path.sh
+[12.333s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/environment/library_path.dsv
+[12.333s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/libaxbot_interfaces__rosidl_generator_c.so
+[12.333s] -- Set non-toolchain portion of runtime path of "/media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/libaxbot_interfaces__rosidl_generator_c.so" to ""
+[12.333s] -- Up-to-date: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces
+[12.334s] -- Up-to-date: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg
+[12.334s] -- Up-to-date: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail
+[12.334s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/device_info__rosidl_typesupport_fastrtps_c.h
+[12.334s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/planning_state__rosidl_typesupport_fastrtps_c.h
+[12.334s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/robot_pose__rosidl_typesupport_fastrtps_c.h
+[12.334s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/slam_state__rosidl_typesupport_fastrtps_c.h
+[12.334s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/wheel_state__rosidl_typesupport_fastrtps_c.h
+[12.334s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[12.334s] -- Up-to-date: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv
+[12.334s] -- Up-to-date: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail
+[12.334s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/get_device_info__rosidl_typesupport_fastrtps_c.h
+[12.334s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/set_control_mode__rosidl_typesupport_fastrtps_c.h
+[12.334s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/set_emergency_stop__rosidl_typesupport_fastrtps_c.h
+[12.335s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/libaxbot_interfaces__rosidl_typesupport_fastrtps_c.so
+[12.335s] -- Set non-toolchain portion of runtime path of "/media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/libaxbot_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[12.335s] -- Up-to-date: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces
+[12.335s] -- Up-to-date: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg
+[12.335s] -- Up-to-date: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail
+[12.335s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/device_info__builder.hpp
+[12.335s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/device_info__struct.hpp
+[12.336s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/device_info__traits.hpp
+[12.336s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/device_info__type_support.hpp
+[12.336s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/planning_state__builder.hpp
+[12.336s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/planning_state__struct.hpp
+[12.336s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/planning_state__traits.hpp
+[12.336s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/planning_state__type_support.hpp
+[12.336s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/robot_pose__builder.hpp
+[12.336s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/robot_pose__struct.hpp
+[12.336s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/robot_pose__traits.hpp
+[12.336s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/robot_pose__type_support.hpp
+[12.336s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/slam_state__builder.hpp
+[12.336s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/slam_state__struct.hpp
+[12.337s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/slam_state__traits.hpp
+[12.337s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/slam_state__type_support.hpp
+[12.337s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/wheel_state__builder.hpp
+[12.337s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/wheel_state__struct.hpp
+[12.337s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/wheel_state__traits.hpp
+[12.337s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/wheel_state__type_support.hpp
+[12.337s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/device_info.hpp
+[12.337s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/planning_state.hpp
+[12.337s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/robot_pose.hpp
+[12.337s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[12.337s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/slam_state.hpp
+[12.338s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/wheel_state.hpp
+[12.338s] -- Up-to-date: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv
+[12.338s] -- Up-to-date: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail
+[12.338s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/get_device_info__builder.hpp
+[12.338s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/get_device_info__struct.hpp
+[12.338s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/get_device_info__traits.hpp
+[12.338s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/get_device_info__type_support.hpp
+[12.338s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/set_control_mode__builder.hpp
+[12.338s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/set_control_mode__struct.hpp
+[12.338s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/set_control_mode__traits.hpp
+[12.338s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/set_control_mode__type_support.hpp
+[12.339s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/set_emergency_stop__builder.hpp
+[12.339s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/set_emergency_stop__struct.hpp
+[12.339s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/set_emergency_stop__traits.hpp
+[12.339s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/set_emergency_stop__type_support.hpp
+[12.339s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/get_device_info.hpp
+[12.339s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/set_control_mode.hpp
+[12.339s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/set_emergency_stop.hpp
+[12.339s] -- Up-to-date: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces
+[12.339s] -- Up-to-date: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg
+[12.339s] -- Up-to-date: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail
+[12.340s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/dds_fastrtps
+[12.340s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/device_info__rosidl_typesupport_fastrtps_cpp.hpp
+[12.340s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/planning_state__rosidl_typesupport_fastrtps_cpp.hpp
+[12.340s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/robot_pose__rosidl_typesupport_fastrtps_cpp.hpp
+[12.340s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/slam_state__rosidl_typesupport_fastrtps_cpp.hpp
+[12.340s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/wheel_state__rosidl_typesupport_fastrtps_cpp.hpp
+[12.340s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[12.340s] -- Up-to-date: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv
+[12.340s] -- Up-to-date: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail
+[12.340s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/dds_fastrtps
+[12.340s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/get_device_info__rosidl_typesupport_fastrtps_cpp.hpp
+[12.340s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/set_control_mode__rosidl_typesupport_fastrtps_cpp.hpp
+[12.340s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/set_emergency_stop__rosidl_typesupport_fastrtps_cpp.hpp
+[12.341s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/libaxbot_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[12.341s] -- Set non-toolchain portion of runtime path of "/media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/libaxbot_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[12.341s] -- Up-to-date: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces
+[12.341s] -- Up-to-date: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg
+[12.341s] -- Up-to-date: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail
+[12.341s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/device_info__rosidl_typesupport_introspection_c.h
+[12.342s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/device_info__type_support.c
+[12.342s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/planning_state__rosidl_typesupport_introspection_c.h
+[12.342s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/planning_state__type_support.c
+[12.342s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/robot_pose__rosidl_typesupport_introspection_c.h
+[12.342s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/robot_pose__type_support.c
+[12.342s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/slam_state__rosidl_typesupport_introspection_c.h
+[12.342s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/slam_state__type_support.c
+[12.342s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/wheel_state__rosidl_typesupport_introspection_c.h
+[12.342s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/wheel_state__type_support.c
+[12.342s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[12.342s] -- Up-to-date: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv
+[12.342s] -- Up-to-date: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail
+[12.343s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/get_device_info__rosidl_typesupport_introspection_c.h
+[12.343s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/get_device_info__type_support.c
+[12.343s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/set_control_mode__rosidl_typesupport_introspection_c.h
+[12.343s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/set_control_mode__type_support.c
+[12.343s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/set_emergency_stop__rosidl_typesupport_introspection_c.h
+[12.343s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/set_emergency_stop__type_support.c
+[12.343s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/libaxbot_interfaces__rosidl_typesupport_introspection_c.so
+[12.344s] -- Set non-toolchain portion of runtime path of "/media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/libaxbot_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[12.344s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/libaxbot_interfaces__rosidl_typesupport_c.so
+[12.344s] -- Set non-toolchain portion of runtime path of "/media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/libaxbot_interfaces__rosidl_typesupport_c.so" to ""
+[12.344s] -- Up-to-date: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces
+[12.344s] -- Up-to-date: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg
+[12.344s] -- Up-to-date: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail
+[12.344s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/device_info__rosidl_typesupport_introspection_cpp.hpp
+[12.344s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/device_info__type_support.cpp
+[12.345s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/planning_state__rosidl_typesupport_introspection_cpp.hpp
+[12.345s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/planning_state__type_support.cpp
+[12.345s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/robot_pose__rosidl_typesupport_introspection_cpp.hpp
+[12.345s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/robot_pose__type_support.cpp
+[12.345s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/slam_state__rosidl_typesupport_introspection_cpp.hpp
+[12.345s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/slam_state__type_support.cpp
+[12.345s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/wheel_state__rosidl_typesupport_introspection_cpp.hpp
+[12.345s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/msg/detail/wheel_state__type_support.cpp
+[12.345s] -- Up-to-date: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv
+[12.345s] -- Up-to-date: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail
+[12.345s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/get_device_info__rosidl_typesupport_introspection_cpp.hpp
+[12.345s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/get_device_info__type_support.cpp
+[12.346s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/set_control_mode__rosidl_typesupport_introspection_cpp.hpp
+[12.346s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/set_control_mode__type_support.cpp
+[12.346s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/set_emergency_stop__rosidl_typesupport_introspection_cpp.hpp
+[12.346s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/include/axbot_interfaces/axbot_interfaces/srv/detail/set_emergency_stop__type_support.cpp
+[12.346s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/libaxbot_interfaces__rosidl_typesupport_introspection_cpp.so
+[12.346s] -- Set non-toolchain portion of runtime path of "/media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/libaxbot_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[12.347s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/libaxbot_interfaces__rosidl_typesupport_cpp.so
+[12.347s] -- Set non-toolchain portion of runtime path of "/media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/libaxbot_interfaces__rosidl_typesupport_cpp.so" to ""
+[12.347s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/environment/pythonpath.sh
+[12.347s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/environment/pythonpath.dsv
+[12.347s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces-1.0.0-py3.12.egg-info
+[12.347s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces-1.0.0-py3.12.egg-info/dependency_links.txt
+[12.348s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces-1.0.0-py3.12.egg-info/PKG-INFO
+[12.348s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces-1.0.0-py3.12.egg-info/SOURCES.txt
+[12.348s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces-1.0.0-py3.12.egg-info/top_level.txt
+[12.348s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces
+[12.348s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/axbot_interfaces_s__rosidl_typesupport_c.so
+[12.348s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/axbot_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[12.348s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/axbot_interfaces_s__rosidl_typesupport_introspection_c.so
+[12.348s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/msg
+[12.348s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/msg/_device_info.py
+[12.348s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/msg/_device_info_s.c
+[12.349s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/msg/_planning_state.py
+[12.349s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/msg/_planning_state_s.c
+[12.349s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/msg/_robot_pose.py
+[12.349s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/msg/_robot_pose_s.c
+[12.349s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/msg/_slam_state.py
+[12.349s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/msg/_slam_state_s.c
+[12.349s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/msg/_wheel_state.py
+[12.349s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/msg/_wheel_state_s.c
+[12.350s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/msg/__init__.py
+[12.350s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/srv
+[12.350s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/srv/_get_device_info.py
+[12.350s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/srv/_get_device_info_s.c
+[12.350s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/srv/_set_control_mode.py
+[12.350s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/srv/_set_control_mode_s.c
+[12.350s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/srv/_set_emergency_stop.py
+[12.350s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/srv/_set_emergency_stop_s.c
+[12.351s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/srv/__init__.py
+[12.351s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/_axbot_interfaces_s.ep.rosidl_typesupport_c.c
+[12.351s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/_axbot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[12.351s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/_axbot_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[12.351s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/__init__.py
+[12.403s] Listing '/media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces'...
+[12.403s] Compiling '/media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/__init__.py'...
+[12.403s] Listing '/media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/msg'...
+[12.404s] Compiling '/media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/msg/__init__.py'...
+[12.404s] Compiling '/media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/msg/_device_info.py'...
+[12.404s] Compiling '/media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/msg/_planning_state.py'...
+[12.404s] Compiling '/media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/msg/_robot_pose.py'...
+[12.404s] Compiling '/media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/msg/_slam_state.py'...
+[12.404s] Compiling '/media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/msg/_wheel_state.py'...
+[12.404s] Listing '/media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/srv'...
+[12.404s] Compiling '/media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/srv/__init__.py'...
+[12.404s] Compiling '/media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/srv/_get_device_info.py'...
+[12.404s] Compiling '/media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/srv/_set_control_mode.py'...
+[12.404s] Compiling '/media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/srv/_set_emergency_stop.py'...
+[12.409s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/axbot_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[12.409s] -- Set non-toolchain portion of runtime path of "/media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/axbot_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""
+[12.409s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/axbot_interfaces_s__rosidl_typesupport_introspection_c.so
+[12.410s] -- Set non-toolchain portion of runtime path of "/media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/axbot_interfaces_s__rosidl_typesupport_introspection_c.so" to ""
+[12.410s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/axbot_interfaces_s__rosidl_typesupport_c.so
+[12.410s] -- Set non-toolchain portion of runtime path of "/media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages/axbot_interfaces/axbot_interfaces_s__rosidl_typesupport_c.so" to ""
+[12.410s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/libaxbot_interfaces__rosidl_generator_py.so
+[12.411s] -- Set non-toolchain portion of runtime path of "/media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/libaxbot_interfaces__rosidl_generator_py.so" to ""
+[12.411s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/msg/DeviceInfo.idl
+[12.411s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/msg/WheelState.idl
+[12.411s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/msg/SlamState.idl
+[12.411s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/msg/PlanningState.idl
+[12.411s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/msg/RobotPose.idl
+[12.412s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/srv/SetControlMode.idl
+[12.412s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/srv/SetEmergencyStop.idl
+[12.412s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/srv/GetDeviceInfo.idl
+[12.412s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/msg/DeviceInfo.msg
+[12.412s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/msg/WheelState.msg
+[12.412s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/msg/SlamState.msg
+[12.412s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/msg/PlanningState.msg
+[12.413s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/msg/RobotPose.msg
+[12.413s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/srv/SetControlMode.srv
+[12.413s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/srv/SetEmergencyStop.srv
+[12.413s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/srv/GetDeviceInfo.srv
+[12.413s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/ament_index/resource_index/package_run_dependencies/axbot_interfaces
+[12.413s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/ament_index/resource_index/parent_prefix_path/axbot_interfaces
+[12.413s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/environment/ament_prefix_path.sh
+[12.414s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/environment/ament_prefix_path.dsv
+[12.414s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/environment/path.sh
+[12.414s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/environment/path.dsv
+[12.414s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/local_setup.bash
+[12.414s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/local_setup.sh
+[12.414s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/local_setup.zsh
+[12.414s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/local_setup.dsv
+[12.415s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/package.dsv
+[12.415s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/ament_index/resource_index/packages/axbot_interfaces
+[12.415s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/cmake/export_axbot_interfaces__rosidl_generator_cExport.cmake
+[12.415s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/cmake/export_axbot_interfaces__rosidl_generator_cExport-noconfig.cmake
+[12.415s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/cmake/export_axbot_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[12.415s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/cmake/export_axbot_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[12.416s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/cmake/export_axbot_interfaces__rosidl_generator_cppExport.cmake
+[12.416s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/cmake/export_axbot_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[12.416s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/cmake/export_axbot_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[12.416s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/cmake/axbot_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[12.416s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/cmake/axbot_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[12.416s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/cmake/axbot_interfaces__rosidl_typesupport_cExport.cmake
+[12.416s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/cmake/axbot_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[12.417s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/cmake/axbot_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[12.417s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/cmake/axbot_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[12.417s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/cmake/axbot_interfaces__rosidl_typesupport_cppExport.cmake
+[12.417s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/cmake/axbot_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[12.417s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/cmake/export_axbot_interfaces__rosidl_generator_pyExport.cmake
+[12.417s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/cmake/export_axbot_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[12.418s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/cmake/rosidl_cmake-extras.cmake
+[12.418s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[12.418s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[12.418s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[12.418s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[12.418s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[12.418s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[12.419s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/cmake/axbot_interfacesConfig.cmake
+[12.419s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/cmake/axbot_interfacesConfig-version.cmake
+[12.419s] -- Installing: /media/roboserver/DATA/axbot_ws/install/axbot_interfaces/share/axbot_interfaces/package.xml
+[12.421s] Invoked command in '/media/roboserver/DATA/axbot_ws/build/axbot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/media/roboserver/DATA/axbot_ws/install/pc2_listener:/media/roboserver/DATA/axbot_ws/install/axbot_examples:/media/roboserver/DATA/axbot_ws/install/axbot_driver:/media/roboserver/DATA/autox_ws/install/fielder_teleop:/media/roboserver/DATA/autox_ws/install/fielder_odometry:/media/roboserver/DATA/autox_ws/install/fielder_navigation:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /media/roboserver/DATA/axbot_ws/build/axbot_interfaces

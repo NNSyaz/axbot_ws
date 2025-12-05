@@ -1,0 +1,12 @@
+string rosversion
+string rosdistro
+string axbot_version
+string model
+string serial_number
+string device_name
+string nickname
+float32 inscribed_radius
+float32 height
+float32 thickness
+float32 wheel_distance
+float32 width

@@ -1,0 +1,3 @@
+Invoking command in '/media/roboserver/DATA/axbot_ws/build/axbot_navigation': /usr/bin/cmake --build /media/roboserver/DATA/axbot_ws/build/axbot_navigation -- -j8 -l8
+Invoked command in '/media/roboserver/DATA/axbot_ws/build/axbot_navigation' returned '0': /usr/bin/cmake --build /media/roboserver/DATA/axbot_ws/build/axbot_navigation -- -j8 -l8
+Invoking command in '/media/roboserver/DATA/axbot_ws/build/axbot_navigation': /usr/bin/cmake --install /media/roboserver/DATA/axbot_ws/build/axbot_navigation

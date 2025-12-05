@@ -1,0 +1,20 @@
+running egg_info
+writing ../../build/axbot_driver/axbot_driver.egg-info/PKG-INFO
+writing dependency_links to ../../build/axbot_driver/axbot_driver.egg-info/dependency_links.txt
+writing entry points to ../../build/axbot_driver/axbot_driver.egg-info/entry_points.txt
+writing requirements to ../../build/axbot_driver/axbot_driver.egg-info/requires.txt
+writing top-level names to ../../build/axbot_driver/axbot_driver.egg-info/top_level.txt
+reading manifest file '../../build/axbot_driver/axbot_driver.egg-info/SOURCES.txt'
+writing manifest file '../../build/axbot_driver/axbot_driver.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/media/roboserver/DATA/axbot_ws/install/axbot_driver/lib/python3.12/site-packages/axbot_driver-1.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/axbot_driver/axbot_driver.egg-info to /media/roboserver/DATA/axbot_ws/install/axbot_driver/lib/python3.12/site-packages/axbot_driver-1.0.0-py3.12.egg-info
+running install_scripts
+Installing axbot_node script to /media/roboserver/DATA/axbot_ws/install/axbot_driver/lib/axbot_driver
+Installing scan_bridge script to /media/roboserver/DATA/axbot_ws/install/axbot_driver/lib/axbot_driver
+writing list of installed files to '/media/roboserver/DATA/axbot_ws/build/axbot_driver/install.log'

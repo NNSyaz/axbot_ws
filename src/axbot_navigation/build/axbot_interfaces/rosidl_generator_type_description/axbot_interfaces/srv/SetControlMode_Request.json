@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "axbot_interfaces/srv/SetControlMode_Request",
+      "fields": [
+        {
+          "name": "mode",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "axbot_interfaces/srv/SetControlMode_Request",
+      "hash_string": "RIHS01_9f28916ada21e8d18dd62c13c7802ba4c3018bc97935d91b4a639837ee4a49e0"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: axbot-driver
+Version: 1.0.0
+Summary: ROS2 driver for AxBot Fielder robot
+Maintainer: rsb
+Maintainer-email: syazwaninurul@gmail.com
+License: None
