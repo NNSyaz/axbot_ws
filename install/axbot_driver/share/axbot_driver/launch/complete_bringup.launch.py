@@ -43,7 +43,7 @@ def generate_launch_description():
         parameters=[{'use_sim_time': use_sim_time}]
     )
     
-    # 3. AxBot Driver Node
+    # 3. AxBot Node
     axbot_driver = Node(
         package='axbot_driver',
         executable='axbot_node',
@@ -51,7 +51,10 @@ def generate_launch_description():
         parameters=[params_file, {'robot_ip': robot_ip, 'use_sim_time': use_sim_time}]
     )
     
-    # 4. SLAM Toolbox with PROPER configuration
+    # Optional: if your /scan publishes too fast, throttle in axbot_params.yaml or here
+    # e.g., qos_profile = {'depth': 50, 'reliability': 'best_effort'}
+    
+    # 4. SLAM Toolbox
     slam_toolbox = Node(
         package='slam_toolbox',
         executable='async_slam_toolbox_node',
@@ -61,47 +64,18 @@ def generate_launch_description():
             'odom_frame': 'odom',
             'map_frame': 'map',
             'base_frame': 'base_link',
-            'scan_topic': '/scan',
+            'scan_topic': '/scan',  # ensure matches your robot
             'mode': 'mapping',
-            
-            # CRITICAL: Map anchoring settings
-            'map_start_pose': [0.0, 0.0, 0.0],  # Start at origin
-            'map_start_at_dock': True,
-            
-            # Resolution and range
             'resolution': 0.05,
             'max_laser_range': 20.0,
-            'minimum_time_interval': 0.5,
-            
-            # Transform settings - IMPORTANT
-            'transform_publish_period': 0.02,
-            'tf_buffer_duration': 30.0,
-            'transform_timeout': 0.2,
-            
-            # Map update
             'map_update_interval': 2.0,
-            
-            # Scan matching - helps stability
-            'use_scan_matching': True,
-            'use_scan_barycenter': True,
-            'minimum_travel_distance': 0.2,
-            'minimum_travel_heading': 0.2,
-            
-            # Loop closure
-            'do_loop_closing': True,
-            'loop_search_maximum_distance': 3.0,
-            
-            # Other settings
-            'debug_logging': False,
-            'throttle_scans': 1,
-            'stack_size_to_use': 40000000,
         }],
         condition=IfCondition(LaunchConfiguration('enable_slam'))
     )
     
-    # 5. RViz2 (delayed 3 seconds to allow everything to initialize)
+    # 5. RViz2 (delayed 2 seconds to allow TF/URDF to publish)
     rviz = TimerAction(
-        period=3.0,
+        period=2.0,
         actions=[Node(
             package='rviz2',
             executable='rviz2',

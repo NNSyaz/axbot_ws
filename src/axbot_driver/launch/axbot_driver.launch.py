@@ -49,8 +49,19 @@ def generate_launch_description():
         ]
     )
     
+    # Static transform: map -> odom
+    # This provides the missing map frame for navigation and visualization
+    map_to_odom_tf = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='map_to_odom_publisher',
+        arguments=['0', '0', '0', '0', '0', '0', 'map', 'odom'],
+        parameters=[{'use_sim_time': use_sim_time}]
+    )
+    
     return LaunchDescription([
         robot_ip_arg,
         use_sim_time_arg,
         axbot_node,
+        map_to_odom_tf,
     ])

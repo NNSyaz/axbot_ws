@@ -1,0 +1,61 @@
+[1.161s] Invoking command in '/media/roboserver/DATA/axbot_ws/src/axbot_driver': AMENT_PREFIX_PATH=/media/roboserver/DATA/axbot_ws/install/axbot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/media/roboserver/DATA/axbot_ws/install/axbot_interfaces:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/media/roboserver/DATA/axbot_ws/build/axbot_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/roboserver/DATA/axbot_ws/install/axbot_driver/lib/python3.12/site-packages:/media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/axbot_driver build --build-base /media/roboserver/DATA/axbot_ws/build/axbot_driver/build install --record /media/roboserver/DATA/axbot_ws/build/axbot_driver/install.log --single-version-externally-managed install_data
+[1.456s] running egg_info
+[1.457s] creating ../../build/axbot_driver/axbot_driver.egg-info
+[1.480s] writing ../../build/axbot_driver/axbot_driver.egg-info/PKG-INFO
+[1.480s] writing dependency_links to ../../build/axbot_driver/axbot_driver.egg-info/dependency_links.txt
+[1.481s] writing entry points to ../../build/axbot_driver/axbot_driver.egg-info/entry_points.txt
+[1.481s] writing requirements to ../../build/axbot_driver/axbot_driver.egg-info/requires.txt
+[1.481s] writing top-level names to ../../build/axbot_driver/axbot_driver.egg-info/top_level.txt
+[1.481s] writing manifest file '../../build/axbot_driver/axbot_driver.egg-info/SOURCES.txt'
+[1.528s] reading manifest file '../../build/axbot_driver/axbot_driver.egg-info/SOURCES.txt'
+[1.529s] writing manifest file '../../build/axbot_driver/axbot_driver.egg-info/SOURCES.txt'
+[1.529s] running build
+[1.529s] running build_py
+[1.529s] creating /media/roboserver/DATA/axbot_ws/build/axbot_driver/build
+[1.529s] creating /media/roboserver/DATA/axbot_ws/build/axbot_driver/build/lib
+[1.530s] creating /media/roboserver/DATA/axbot_ws/build/axbot_driver/build/lib/axbot_driver
+[1.530s] copying axbot_driver/axbot_node.py -> /media/roboserver/DATA/axbot_ws/build/axbot_driver/build/lib/axbot_driver
+[1.530s] copying axbot_driver/pointcloud_to_scan.py -> /media/roboserver/DATA/axbot_ws/build/axbot_driver/build/lib/axbot_driver
+[1.530s] copying axbot_driver/rest_client.py -> /media/roboserver/DATA/axbot_ws/build/axbot_driver/build/lib/axbot_driver
+[1.530s] copying axbot_driver/scan_bridge.py -> /media/roboserver/DATA/axbot_ws/build/axbot_driver/build/lib/axbot_driver
+[1.530s] copying axbot_driver/websocket_client.py -> /media/roboserver/DATA/axbot_ws/build/axbot_driver/build/lib/axbot_driver
+[1.530s] copying axbot_driver/__init__.py -> /media/roboserver/DATA/axbot_ws/build/axbot_driver/build/lib/axbot_driver
+[1.531s] running install
+[1.537s] running install_lib
+[1.561s] creating /media/roboserver/DATA/axbot_ws/install/axbot_driver/lib/python3.12/site-packages/axbot_driver
+[1.561s] copying /media/roboserver/DATA/axbot_ws/build/axbot_driver/build/lib/axbot_driver/axbot_node.py -> /media/roboserver/DATA/axbot_ws/install/axbot_driver/lib/python3.12/site-packages/axbot_driver
+[1.562s] copying /media/roboserver/DATA/axbot_ws/build/axbot_driver/build/lib/axbot_driver/pointcloud_to_scan.py -> /media/roboserver/DATA/axbot_ws/install/axbot_driver/lib/python3.12/site-packages/axbot_driver
+[1.562s] copying /media/roboserver/DATA/axbot_ws/build/axbot_driver/build/lib/axbot_driver/rest_client.py -> /media/roboserver/DATA/axbot_ws/install/axbot_driver/lib/python3.12/site-packages/axbot_driver
+[1.563s] copying /media/roboserver/DATA/axbot_ws/build/axbot_driver/build/lib/axbot_driver/scan_bridge.py -> /media/roboserver/DATA/axbot_ws/install/axbot_driver/lib/python3.12/site-packages/axbot_driver
+[1.563s] copying /media/roboserver/DATA/axbot_ws/build/axbot_driver/build/lib/axbot_driver/websocket_client.py -> /media/roboserver/DATA/axbot_ws/install/axbot_driver/lib/python3.12/site-packages/axbot_driver
+[1.563s] copying /media/roboserver/DATA/axbot_ws/build/axbot_driver/build/lib/axbot_driver/__init__.py -> /media/roboserver/DATA/axbot_ws/install/axbot_driver/lib/python3.12/site-packages/axbot_driver
+[1.563s] byte-compiling /media/roboserver/DATA/axbot_ws/install/axbot_driver/lib/python3.12/site-packages/axbot_driver/axbot_node.py to axbot_node.cpython-312.pyc
+[1.565s] byte-compiling /media/roboserver/DATA/axbot_ws/install/axbot_driver/lib/python3.12/site-packages/axbot_driver/pointcloud_to_scan.py to pointcloud_to_scan.cpython-312.pyc
+[1.566s] byte-compiling /media/roboserver/DATA/axbot_ws/install/axbot_driver/lib/python3.12/site-packages/axbot_driver/rest_client.py to rest_client.cpython-312.pyc
+[1.567s] byte-compiling /media/roboserver/DATA/axbot_ws/install/axbot_driver/lib/python3.12/site-packages/axbot_driver/scan_bridge.py to scan_bridge.cpython-312.pyc
+[1.567s] byte-compiling /media/roboserver/DATA/axbot_ws/install/axbot_driver/lib/python3.12/site-packages/axbot_driver/websocket_client.py to websocket_client.cpython-312.pyc
+[1.568s] byte-compiling /media/roboserver/DATA/axbot_ws/install/axbot_driver/lib/python3.12/site-packages/axbot_driver/__init__.py to __init__.cpython-312.pyc
+[1.569s] running install_data
+[1.569s] creating /media/roboserver/DATA/axbot_ws/install/axbot_driver/share/ament_index
+[1.569s] creating /media/roboserver/DATA/axbot_ws/install/axbot_driver/share/ament_index/resource_index
+[1.569s] creating /media/roboserver/DATA/axbot_ws/install/axbot_driver/share/ament_index/resource_index/packages
+[1.569s] copying resource/axbot_driver -> /media/roboserver/DATA/axbot_ws/install/axbot_driver/share/ament_index/resource_index/packages
+[1.569s] copying package.xml -> /media/roboserver/DATA/axbot_ws/install/axbot_driver/share/axbot_driver
+[1.570s] creating /media/roboserver/DATA/axbot_ws/install/axbot_driver/share/axbot_driver/launch
+[1.570s] copying launch/axbot_driver.launch.py -> /media/roboserver/DATA/axbot_ws/install/axbot_driver/share/axbot_driver/launch
+[1.570s] copying launch/bringup.launch.py -> /media/roboserver/DATA/axbot_ws/install/axbot_driver/share/axbot_driver/launch
+[1.570s] copying launch/bringup_complete.launch.py -> /media/roboserver/DATA/axbot_ws/install/axbot_driver/share/axbot_driver/launch
+[1.570s] copying launch/complete_bringup.launch.py -> /media/roboserver/DATA/axbot_ws/install/axbot_driver/share/axbot_driver/launch
+[1.570s] copying launch/rviz.launch.py -> /media/roboserver/DATA/axbot_ws/install/axbot_driver/share/axbot_driver/launch
+[1.570s] copying launch/slam_bringup.launch.py -> /media/roboserver/DATA/axbot_ws/install/axbot_driver/share/axbot_driver/launch
+[1.571s] creating /media/roboserver/DATA/axbot_ws/install/axbot_driver/share/axbot_driver/config
+[1.571s] copying config/axbot_params.yaml -> /media/roboserver/DATA/axbot_ws/install/axbot_driver/share/axbot_driver/config
+[1.571s] creating /media/roboserver/DATA/axbot_ws/install/axbot_driver/share/axbot_driver/rviz
+[1.571s] copying rviz/slam_view.rviz -> /media/roboserver/DATA/axbot_ws/install/axbot_driver/share/axbot_driver/rviz
+[1.571s] running install_egg_info
+[1.595s] Copying ../../build/axbot_driver/axbot_driver.egg-info to /media/roboserver/DATA/axbot_ws/install/axbot_driver/lib/python3.12/site-packages/axbot_driver-1.0.0-py3.12.egg-info
+[1.596s] running install_scripts
+[1.756s] Installing axbot_node script to /media/roboserver/DATA/axbot_ws/install/axbot_driver/lib/axbot_driver
+[1.756s] Installing scan_bridge script to /media/roboserver/DATA/axbot_ws/install/axbot_driver/lib/axbot_driver
+[1.756s] writing list of installed files to '/media/roboserver/DATA/axbot_ws/build/axbot_driver/install.log'
+[1.792s] Invoked command in '/media/roboserver/DATA/axbot_ws/src/axbot_driver' returned '0': AMENT_PREFIX_PATH=/media/roboserver/DATA/axbot_ws/install/axbot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/media/roboserver/DATA/axbot_ws/install/axbot_interfaces:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/media/roboserver/DATA/axbot_ws/build/axbot_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/roboserver/DATA/axbot_ws/install/axbot_driver/lib/python3.12/site-packages:/media/roboserver/DATA/axbot_ws/install/axbot_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/axbot_driver build --build-base /media/roboserver/DATA/axbot_ws/build/axbot_driver/build install --record /media/roboserver/DATA/axbot_ws/build/axbot_driver/install.log --single-version-externally-managed install_data

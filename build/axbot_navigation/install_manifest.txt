@@ -1,5 +1,4 @@
 /media/roboserver/DATA/axbot_ws/install/axbot_navigation/share/axbot_navigation/config/nav2_params.yaml
-/media/roboserver/DATA/axbot_ws/install/axbot_navigation/share/axbot_navigation/config/slam_params.yaml
 /media/roboserver/DATA/axbot_ws/install/axbot_navigation/share/axbot_navigation/config/slam_toolbox.yaml
 /media/roboserver/DATA/axbot_ws/install/axbot_navigation/share/axbot_navigation/launch/navigation.launch.py
 /media/roboserver/DATA/axbot_ws/install/axbot_navigation/share/axbot_navigation/launch/slam.launch.py
